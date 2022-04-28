@@ -8,4 +8,4 @@
 如果你拥有一个GitHub账号，不妨点一下右上角的star，支持一下这个项目，～～让它活得更久～～
 
 ## 2、照片收集
-在满足上一项条件后，你可以通过[fork](https://github.com/shbwb/misaka/tree/main/pic)，并提交Pull Request的方式，在[/pic文件夹](https://github.com/shbwb/misaka/tree/main/pic)中提交照片！
+在满足上一项条件后，你可以通过[fork](https://github.com/shbwb/misaka/fork)，并提交Pull Request的方式，在[/pic文件夹](https://github.com/shbwb/misaka/tree/main/pic)中提交照片！
