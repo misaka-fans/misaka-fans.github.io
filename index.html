@@ -46,29 +46,21 @@ window.onload = function()
     var oA = document.getElementsByTagName("a");
     var timer = null;
     var iSpeed = 6;
-    //复制一遍ul
     oUl.innerHTML +=oUl.innerHTML;
-    //ul的宽度是所有li宽度之和，复制ul之后的整个ul的宽度就是li的长度乘以一个li的宽度
     oUl.style.width = oLi.length*oLi[0].offsetWidth + "px";
     function fnMove()
     {
-        //图片向左移动时的条件，即在div里的ul的offsetLeft小于一个ul的宽度
         if (oUl.offsetLeft<-oUl.offsetWidth/2)
         {
-            //将整个复制的ul向右拖拽直至整个ul中的第一张图归位到起点
             oUl.style.left = 0;
         }
-        //图片向右移动时的条件，即在div里的ul的offsetLeft大于等于0
         else if (oUl.offsetLeft>=0)
         {
-            //将整个复制的ul向左拖拽直至整个ul中的第一张图归位到起点
             oUl.style.left = -oUl.offsetWidth/2 + "px";
         }
-        //给ul一个速度让整个ul的offsetLeft增加或减少，速度为正则向右移动，速度为负则向左移动
         oUl.style.left = oUl.offsetLeft +iSpeed + "px";
     }
-    timer=setInterval(fnMove,30)
-   
+    timer=setInterval(fnMove,30)   
 }
 </script>
 </head>
