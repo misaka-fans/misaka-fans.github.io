@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Misaka Mikoto--御坂美琴「爱我超电磁炮」</title>
+<style>
+body,div,ul,li,p
+{
+    padding: 0;
+    margin: 0;
+}
+#div1
+{
+    position: relative;
+    margin: 10px auto;
+    border: 1px solid black;
+    width: 680px;
+    height:170px;
+    overflow: hidden;
+}
+#div1 ul
+{
+    position: absolute;
+    left:0;
+}
+#div1 ul li
+{
+    float:left;
+    padding: 10px;
+    list-style: none;
+    width: 150px;
+    height: 150px;
+}
+#div1 ul li img
+{
+    width: 150px;
+    height: 150px;
+}
+</style>
+<script>
+window.onload = function()
+{
+    var oDiv = document.getElementById("div1");
+    var oUl = document.getElementsByTagName("ul")[0];
+    var oLi = document.getElementsByTagName("li");
+    var oA = document.getElementsByTagName("a");
+    var timer = null;
+    var iSpeed = 6;
+    //复制一遍ul
+    oUl.innerHTML +=oUl.innerHTML;
+    //ul的宽度是所有li宽度之和，复制ul之后的整个ul的宽度就是li的长度乘以一个li的宽度
+    oUl.style.width = oLi.length*oLi[0].offsetWidth + "px";
+    function fnMove()
+    {
+        //图片向左移动时的条件，即在div里的ul的offsetLeft小于一个ul的宽度
+        if (oUl.offsetLeft<-oUl.offsetWidth/2)
+        {
+            //将整个复制的ul向右拖拽直至整个ul中的第一张图归位到起点
+            oUl.style.left = 0;
+        }
+        //图片向右移动时的条件，即在div里的ul的offsetLeft大于等于0
+        else if (oUl.offsetLeft>=0)
+        {
+            //将整个复制的ul向左拖拽直至整个ul中的第一张图归位到起点
+            oUl.style.left = -oUl.offsetWidth/2 + "px";
+        }
+        //给ul一个速度让整个ul的offsetLeft增加或减少，速度为正则向右移动，速度为负则向左移动
+        oUl.style.left = oUl.offsetLeft +iSpeed + "px";
+    }
+    timer=setInterval(fnMove,30)
+    //点击向左滚动即触发第一个a元素标签
+    oA[0].onclick = function()
+    {
+        iSpeed = -8;
+    }
+    //点击向右滚动即触发第二个a元素标签
+    oA[1].onclick = function()
+    {
+        iSpeed = 8;
+    }
+}
+</script>
+</head>
+<body>
+<div id="div1">
+    <ul>
+        <li><img src="img/1.png"></li>
+        <li><img src="img/2.png"></li>
+        <li><img src="img/3.png"></li>
+        <li><img src="img/4.png"></li>
+    </ul>
+</div>
+<a href="javascript:;">向左滚动</a>
+<a href="javascript:;">向右滚动</a>
+</body>
+</html>
