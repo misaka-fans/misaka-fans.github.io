@@ -36,7 +36,7 @@ body,div,ul,li,p
     width: 416px;
     height: 260px;
 }
-hr {
+.default-line {
     border: 0;
     padding: 3px;
     background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);
@@ -44,36 +44,6 @@ hr {
 .dotted-line {
     border:1px dashed #000;
 }
-.hr-double-arrow {
-    color: #d0d0d5;
-    border: double;
-    border-width: 3px 5px;
-    border-color: #d0d0d5 transparent;
-    height: 1px;
-    overflow: visible;
-    margin-left: 20px;
-    margin-right: 20px;
-    position: relative;
-}
-.hr-double-arrow:before, 
-.hr-double-arrow:after {
-    content: '';
-    position: absolute;
-    width: 5px; height: 5px;
-    border-width: 0 3px 3px 0;
-    border-style: double;
-    top: -3px;
-    background: radial-gradient(2px at 1px 1px, currentColor 2px, transparent 0) no-repeat;
-}
-.hr-double-arrow:before {
-    transform: rotate(-45deg);
-    left: -20px;
-}
-.hr-double-arrow:after {
-    transform: rotate(135deg);
-    right: -20px;
-}
-
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -212,7 +182,7 @@ window.onload = function()
     <img src="https://i.postimg.cc/59pNRkXh/5-AC3-D357-BCB3-4-B51-8641-F4-B45-FA2045-B.png" alt="炮姐硬币" style="width:80px;height:80px;float:left;">
     <img src="https://i.postimg.cc/KY5d8ChF/B2-AC5502-B7-DE-48-E8-90-AE-0-A65-AFCAF5-CE-removebg-preview.png" alt="炮姐硬币" style="width:87px;height:86px;float:right;">
 </div>
-</br></br></br><hr /><!--好久不写格式忘光了。。。-->
+</br></br></br><hr class="default-line" /><!--好久不写格式忘光了。。。-->
 <!--占位测试！-->
 <p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br>
 <p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br>
