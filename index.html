@@ -134,34 +134,6 @@ p {
     padding: 10px;
 }
 </style>
-<script>
-//滚动图片--start
-window.onload = function()
-{
-    var oDiv = document.getElementById("div1");
-    var oUl = document.getElementsByTagName("ul")[0];
-    var oLi = document.getElementsByTagName("li");
-    var oA = document.getElementsByTagName("a");
-    var timer = null;
-    var iSpeed = 5;
-    oUl.innerHTML +=oUl.innerHTML;
-    oUl.style.width = oLi.length*oLi[0].offsetWidth + "px";
-    function fnMove()
-    {
-        if (oUl.offsetLeft<-oUl.offsetWidth/2)
-        {
-            oUl.style.left = 0;
-        }
-        else if (oUl.offsetLeft>=0)
-        {
-            oUl.style.left = -oUl.offsetWidth/2 + "px";
-        }
-        oUl.style.left = oUl.offsetLeft +iSpeed + "px";
-    }
-    timer=setInterval(fnMove,30)   
-}
-//滚动图片--end
-</script>
 </head>
 <body>
 <div class="header"><!--棕色头部-->
@@ -187,7 +159,7 @@ window.onload = function()
 </div>
 </br></br></br><hr class="default-line" /><!--好久不写格式忘光了。。。-->
 <!--占位测试！-->
-<p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br>
+<p>占位测试1</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br>
 <p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br>
 <p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br>
 <p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br><p>占位测试！</p></br>
@@ -196,4 +168,5 @@ window.onload = function()
 <p style="color:#d1d1d1;text-align:center;">&copy 2022 shbwb(misaka-fans)</p>
 </div>
 </body>
+<script src="./js/scroll.js"></script>
 </html>
