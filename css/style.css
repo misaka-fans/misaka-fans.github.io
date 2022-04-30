@@ -38,6 +38,7 @@ p, h1, h2, h3, h4, h5, h6, b, i, a {
 }
 .dotted-line {
     border:1px dashed #d1d1d1;
+    padding：2px；
 }
 .navbar {
     overflow: hidden;
