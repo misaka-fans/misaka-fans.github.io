@@ -1,0 +1,47 @@
+.masonry {
+  width: 1440px;
+  margin: 20px auto;
+  columns: 4;
+  column-gap: 30px;
+}
+.item {
+  width: 100%;
+  break-inside: avoid;
+  margin-bottom: 30px;
+}
+
+.item img {
+  width: 100%;
+}
+
+.item h2 {
+  padding: 8px 0;
+}
+
+.item P {
+  color: #555;
+}
+@media screen and (min-width: 1024px) and (max-width: 1439.98px) {
+  .masonry {
+    width: 96vw;
+    columns: 3;
+    column-gap: 20px;
+  }
+}
+ipad:
+
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+  .masonry {
+    width: 96vw;
+    columns: 2;
+    column-gap: 20px;
+  }
+}
+mobile:
+
+@media screen and (max-width: 767.98px) {
+  .masonry {
+    width: 96vw;
+    columns: 1;
+  }
+}
