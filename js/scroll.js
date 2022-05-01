@@ -5,7 +5,7 @@ window.onload = function()
     var oLi = document.getElementsByTagName("li");
     var oA = document.getElementsByTagName("a");
     var timer = null;
-    var iSpeed = 5;
+    var iSpeed = 6; //滚动速度
     oUl.innerHTML +=oUl.innerHTML;
     oUl.style.width = oLi.length*oLi[0].offsetWidth + "px";
     function fnMove()
@@ -20,5 +20,5 @@ window.onload = function()
         }
         oUl.style.left = oUl.offsetLeft +iSpeed + "px";
     }
-    timer=setInterval(fnMove,3)   
+    timer=setInterval(fnMove,30)   
 }
