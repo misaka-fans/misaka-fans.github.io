@@ -1,6 +1,6 @@
 window.onload = function()
 {
-    var oDiv = document.getElementById("div1");
+    var oDiv = document.getElementById("scroll");
     var oUl = document.getElementsByTagName("ul")[0];
     var oLi = document.getElementsByTagName("li");
     var oA = document.getElementsByTagName("a");
