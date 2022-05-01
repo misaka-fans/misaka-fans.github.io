@@ -20,5 +20,5 @@ window.onload = function()
         }
         oUl.style.left = oUl.offsetLeft +iSpeed + "px";
     }
-    timer=setInterval(fnMove,30)   
+    timer=setInterval(fnMove,3)   
 }
