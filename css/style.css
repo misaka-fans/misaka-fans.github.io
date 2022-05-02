@@ -7,15 +7,15 @@ p, h1, h2, h3, h4, h5, h6, b, i, a {
     font-family:sans-serif;
 }
 a:link {
-  text-decoration:none;
+  text-decoration: none;
   color: #0080FF;
 }
 a:hover {
-  text-decoration:underline;
+  text-decoration: underline;
   color: #0174DF;
 }
 a:hover {
-  text-decoration:underline;
+  text-decoration: none;
   color: #0080FF;
 }
 #div1
