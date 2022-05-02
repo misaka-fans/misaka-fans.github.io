@@ -35,12 +35,29 @@
       .navbar > p {
         color: #eee;
       }
+      .note {
+        overflow: hidden;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        z-index: 999;
+        padding: 10px;
+      }
+      .navbar > p {
+        color: #eee;
+      }
       .sticky {
         position: -webkit-sticky;
         position: -o-sticky;
         position: -moz-sticky;
         position: sticky;
         top: 0;
+      }
+      .sit-foot {
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        z-index: 1;
       }
       img {
         width: 100%;
@@ -69,6 +86,9 @@
   <body>
     <div class="navbar sticky"><!--导航栏-->
       <a href="/">←</a>
+    </div>
+    <div class="note">
+      <p>照片投递：</p>
     </div>
     <img src="/pic/album/57EA7CD8-8F87-4016-A95C-F9C09DAA8A1A.jpeg" alt="炮姐看电脑">
     <img src="/pic/album/62BB67D7-3C6F-4AAE-B47A-F4AE41B89A82.webp" alt="投币炮">
