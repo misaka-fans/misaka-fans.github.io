@@ -88,4 +88,38 @@
     <!-- 此处尽量使用webp格式照片，压缩优化 -->
     <!-- 普通格式转换可能越转越大，视情况而定 -->
   </body>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"/>
+              <script
+                async="async"
+                src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
+                onload='
+                    let pio_container = document.createElement("div");
+                    pio_container.classList.add("pio-container");
+                    pio_container.classList.add("right");
+                    pio_container.style.bottom = "-2rem";
+                    pio_container.style.zIndex = "1";
+                    document.body.insertAdjacentElement("beforeend", pio_container);
+                    let pio_action = document.createElement("div");
+                    pio_action.classList.add("pio-action");
+                    pio_container.insertAdjacentElement("beforeend", pio_action);
+                    let pio_canvas = document.createElement("canvas");
+                    pio_canvas.id = "pio";
+                    pio_canvas.style.width = "14rem";
+                    pio_canvas.width = "750";
+                    pio_canvas.height = "1000";
+                    pio_container.insertAdjacentElement("beforeend", pio_canvas);
+                    let pio = new Paul_Pio({
+                      "mode": "fixed",
+                      "hidden": true,
+                      "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
+                      "content": {
+                        "link": ["https://github.com/misaka-fans/misaka-fans.github.io"],
+                        "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
+                        "hidden": true,
+                        "custom": [{
+                          "selector": "a",
+                          "type": "link",
+                        }]
+                      },
+                      "model": ["https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/mikoto/mikoto.model.json",]});'></script>
 </html>
