@@ -1,0 +1,19 @@
+{
+  "name": "Name",
+  "short_name": "Name",
+  "description": "My first web app",
+  "icons": [{
+    "src": "imgs/example.png",
+    "sizes": "128x128",
+    "type": "image/png"
+  }, {
+    "src": "imgs/example2.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#fff",
+  "theme_color": "#000",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
