@@ -3,13 +3,13 @@
   "short_name": "爱我超电磁炮",
   "description": "爱我超电磁炮",
   "icons": [{
-    "src": "/pic/47DDF84E-D942-41E5-8FCA-A7A82FD44F96.jpeg",
+    "src": "/pic/128.ico",
     "sizes": "128x128",
-    "type": "image/png"
+    "type": "ico"
   }, {
-    "src": "/pic/47DDF84E-D942-41E5-8FCA-A7A82FD44F96.jpeg",
+    "src": "/pic/512.ico",
     "sizes": "512x512",
-    "type": "image/png"
+    "type": "ico"
   }],
   "background_color": "#fff",
   "theme_color": "#000",
