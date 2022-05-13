@@ -1,13 +1,13 @@
 {
-  "name": "Name",
-  "short_name": "Name",
-  "description": "My first web app",
+  "name": "爱我超电磁炮",
+  "short_name": "爱我超电磁炮",
+  "description": "爱我超电磁炮",
   "icons": [{
-    "src": "imgs/example.png",
+    "src": "pic/example.png",
     "sizes": "128x128",
     "type": "image/png"
   }, {
-    "src": "imgs/example2.png",
+    "src": "pic/example2.png",
     "sizes": "512x512",
     "type": "image/png"
   }],
