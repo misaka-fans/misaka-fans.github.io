@@ -1,3 +1,20 @@
+:root {
+   --body-bg: #FFFFFF;
+   --body-color: #000000;
+   --card-color: #D8D8D8;
+}
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+   :root {
+       --body-bg: #000000;
+       --body-color: #FFFFFF;
+       --card-color: #424242;
+   }
+}
+body {
+   background: var(--body-bg);
+   color: var(--body-color);
+}
 body,div1,ul,li,p
 {
     padding: 0;
@@ -81,7 +98,7 @@ a:visited {
     margin: auto;
     text-align: center;
     font-family: arial;
-    background: #D8D8D8;
+    background: var(--card-color);
     padding: 30px;
 }
 .card.hover:hover {
