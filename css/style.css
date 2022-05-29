@@ -83,9 +83,10 @@ a:visited {
     font-family: arial;
     background: #D8D8D8;
     padding: 30px;
+    color: black;
 }
 .card.hover:hover {
-    
+    color: black;
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
