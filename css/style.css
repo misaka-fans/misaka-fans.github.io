@@ -92,7 +92,6 @@ a:visited {
     transition: box-shadow .5s;
     -webkit-transition: box-shadow .5s;
     -moz-transition: box-shadow .5s;
-    color: #d1d1d1;
 }
 .sticky {
     position: -webkit-sticky;
