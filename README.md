@@ -29,4 +29,6 @@
 https://misaka-fans-photos.github.io/
 ```
 
+插件：Pio看板娘
+
 GitHub访问：可将 DNS设置为1.2.4.8加速
