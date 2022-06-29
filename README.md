@@ -32,7 +32,7 @@ https://misaka-fans-photos.github.io/
 插件：Pio看板娘
 
 镜像网站：https://misaka-fans.netlify.app
-(Netlify)--本人在使用网易云电脑测试访问时（浏览器：edge，系统：Windows10），发现GitHub pages会重定向至错误网站，镜像备份访问正常。
+(Netlify)--本人在使用网易云电脑测试访问时（浏览器：edge，系统：Windows10），发现GitHub pages会重定向至错误网站，镜像备份访问正常。[此页面](https://dragonstatic.com/q-a.html)大量劫持无辜网页！
 以下是该页面的Q&A
 ```
 我的域名停放在海外平台的，为何会跳转至此？
