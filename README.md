@@ -1,5 +1,4 @@
 <a href="https://github.com/misaka-fans/misaka-fans.github.io" target="_blank"><img src="https://img.shields.io/github/stars/misaka-fans/misaka-fans.github.io" /></a>
-<a href="https://github.com/misaka-fans/misaka-fans.github.io" target="_blank"><img src="https://img.shields.io/github/commits/misaka-fans/misaka-fans.github.io" /></a>
 
 # Misaka Mikoto
 你指尖跃动的电光，是我此生不变的信仰！
