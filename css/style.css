@@ -103,6 +103,7 @@ a:visited {
 }
 .header-nav {
     background: #B45F04;
+    height: 0px;
     color: #eee;
     z-index: 999;
     font-size : 36px;
