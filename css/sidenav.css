@@ -9,6 +9,7 @@
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  backdrop-filter: blur(20px);
 }
 .sidenav a {
   padding: 8px 8px 8px 32px;
