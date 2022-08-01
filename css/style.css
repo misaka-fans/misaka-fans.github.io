@@ -138,7 +138,7 @@ a:visited {
 .container {
     padding: 10px;
 }
-span {
+.header > span {
   position: fixed;
   bottom: 0;
   right: 0;
