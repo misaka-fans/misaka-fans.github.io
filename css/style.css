@@ -138,7 +138,8 @@ a:visited {
 .container {
     padding: 10px;
 }
-.header span {
-  top:2px;
-  left:2px;
+span {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
