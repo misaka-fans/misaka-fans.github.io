@@ -101,14 +101,11 @@ a:visited {
     position: sticky;
     top: 0;
 }
-.header {
+.header-nav {
     background: #B45F04;
     color: #eee;
-    padding: 6px;
-    text-align: left;
-    font-size : 32px;
 }
-.header-container {
+.header {
     background: #B45F04;
     color: #eee;
     padding: 28px;
