@@ -104,7 +104,14 @@ a:visited {
 .header {
     background: #B45F04;
     color: #eee;
-    padding: 32px;
+    padding: 6px;
+    text-align: center;
+    font-size : 32px;
+}
+.header-container {
+    background: #B45F04;
+    color: #eee;
+    padding: 28px;
     text-align: center;
     font-size : 32px;
 }
@@ -137,9 +144,4 @@ a:visited {
 }
 .container {
     padding: 10px;
-}
-.header > span {
-  position: fixed;
-  bottom: 0;
-  right: 0;
 }
