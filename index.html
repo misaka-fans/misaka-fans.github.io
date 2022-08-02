@@ -16,10 +16,13 @@
     <script>
       console.info('恭喜你超越了50%的用户！ \n你找到了第一个彩蛋！')
     </script>
+    <style>
+      .sit-top{position:fixed;top:0px;z-index:999}
+    </style>
   </head>
   <body>
-    <div class="header-nav sticky">
-      <span style="font-size:36px;cursor:pointer;background:#B45F04;" onclick="openNav()">&#9776;</span>
+    <div class="header-nav sticky sit-top">
+      <span style="font-size:36px;cursor:pointer;" onclick="openNav()">&#9776;</span>
     </div>
     <div class="header"><!--棕色头部-->
       <h1>爱我超电磁炮</h1>
