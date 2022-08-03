@@ -1,4 +1,10 @@
 {
+  "name": "misaka-mikoto",
+  "version": "0.0.1",
+  "description": "炮厨为姐姐大人建立的网站，欢迎前来讨论！",
+  "scripts": {
+    "serve": "wds -p 8000 --open --watch"
+  },
   "devDependencies": {
     "@web/dev-server": "^0.1.32"
   }
