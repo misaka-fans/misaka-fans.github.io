@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding-top: 64px;
   min-height: 100vh;
-  transition: 240ms cubic-bezier(.4, 0, .2, 1);
+  transition: 240ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sidebar-opened {
   padding-left: 300px;
@@ -51,6 +51,7 @@ a:visited {
 .marquee ul {
   position: absolute;
   display: flex;
+  height: 100%;
   left: 0;
   animation: 10s infinite linear scroll;
 }
@@ -61,8 +62,8 @@ a:visited {
   height: 100%;
 }
 .marquee ul li img {
-  width: 416px;
-  height: 260px;
+  width: inherit;
+  height: inherit;
 }
 hr {
   margin: 36px 0 0 12px;
@@ -117,7 +118,7 @@ hr {
   overflow: hidden;
 }
 .sidebar-toggler::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background-color: currentColor;
@@ -145,7 +146,7 @@ hr {
   gap: 8px;
   background-color: #ffffff;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
-  transition: 240ms transform cubic-bezier(.4, 0, .2, 1);
+  transition: 240ms transform cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateX(-100%);
   z-index: 10;
 }
@@ -165,7 +166,7 @@ hr {
   overflow: hidden;
 }
 .sidebar a::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background-color: currentColor;
