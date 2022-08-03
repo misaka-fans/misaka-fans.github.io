@@ -182,10 +182,11 @@ hr {
   opacity: 0.16;
 }
 .banner {
-  height: 64px;
+  min-height: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 12px 24px;
 }
 .banner p {
   color: var(--theme-color);
