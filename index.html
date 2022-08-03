@@ -1,83 +1,127 @@
+<!-- 网页整顿 by @huge-pancake, 真的, 改之前 prettier 甚至格式化不了, 他甚至把 <br /> 写成 </br> 了！！！ -->
 <!DOCTYPE html>
-<html>
+<html lang="zh-hans">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="manifest" href="/pwa/manifest.json">
-    <link rel="shortcut icon" href="/pic/128.ico">
-    <meta name="description" content="一个炮厨为姐姐大人建立的网站，欢迎前来讨论！">
-    <meta name="keywords" content="御坂美琴, Misaka, Mikoto, Misaka Mikoto, Toaru, 魔法禁书目录, 科学超电磁炮, 某科学的超电磁炮, shbwb">
-    <title>Misaka Mikoto--御坂美琴「爱我超电磁炮」</title>
-    <script src="/js/scroll.js"></script>
-    <script src="/js/sidenav.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/style.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/sidenav.css">
-    <script>
-      console.info('恭喜你超越了50%的用户！ \n你找到了第一个彩蛋！')
-    </script>
-    <style>
-      .sit-top{position:fixed;top:0px;z-index:999}
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="manifest" href="/pwa/manifest.json" />
+    <link rel="shortcut icon" href="/pic/128.ico" />
+    <meta
+      name="description"
+      content="一个炮厨为姐姐大人建立的网站，欢迎前来讨论！"
+    />
+    <meta
+      name="keywords"
+      content="御坂美琴, Misaka, Mikoto, Misaka Mikoto, Toaru, 魔法禁书目录, 科学超电磁炮, 某科学的超电磁炮, shbwb"
+    />
+    <title>Misaka Mikoto -- 御坂美琴「爱我超电磁炮」</title>
+    <script src="./scripts/main.js"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
-    <div class="header-nav sticky sit-top">
-      <span style="font-size:36px;cursor:pointer;" onclick="openNav()">&#9776;</span>
-    </div>
-    <div class="header"><!--棕色头部-->
+    <header class="header">
+      <button class="sidebar-toggler material-symbols-outlined">menu</button>
       <h1>爱我超电磁炮</h1>
-    </div>
-    <!--
-    <div class="navbar sticky">
-      <a href="/pages/about-railgun">超电磁炮</a>
-      <a href="/pages/photos">美琴相册</a>
-      <a href="/pages/isml" target="_blank">世萌</a>
-      <a href="https://github.com/misaka-fans/misaka-fans.github.io" target="_blank">开源</a>
-    </div>
-    -->
-    <div id="div1">
+    </header>
+    <section class="banner">
+      <p>
+        君の指先を舞ってる電光は、私の一生変わらない信仰であり、このレールガンだけが永遠
+      </p>
+    </section>
+    <section class="marquee">
       <ul>
-        <li><img src="https://i.postimg.cc/wMsphBrV/12-C5580-A-74-F0-4291-B79-E-F4-D900-A39493.jpg"></li>
-        <li><img src="https://i.postimg.cc/7LRkW7S4/639780.png"></li>
-        <li><img src="https://i.postimg.cc/Y2XJnt3f/919163.jpg"></li>
-        <li><img src="https://i.postimg.cc/jjscY7qW/IMG-4152.jpg"></li>
+        <li>
+          <img
+            src="https://i.postimg.cc/wMsphBrV/12-C5580-A-74-F0-4291-B79-E-F4-D900-A39493.jpg"
+          />
+        </li>
+        <li><img src="https://i.postimg.cc/7LRkW7S4/639780.png" /></li>
+        <li><img src="https://i.postimg.cc/Y2XJnt3f/919163.jpg" /></li>
+        <li><img src="https://i.postimg.cc/jjscY7qW/IMG-4152.jpg" /></li>
       </ul>
-    </div>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="/pages/about-railgun">关于美琴</a>
-      <a href="/pages/photos">美琴照片墙</a>
-      <a href="/pages/isml" target="_blank">世萌比赛</a>
-      <a href="/pages/contact">developing</a>
-    </div>
-    <div class="container">
-      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=28012031&auto=1&height=66"></iframe>
-      <div class="card hover">
-        <h3>你指尖跃动的电光，是我此生不变的信仰</h3>
-        <p>唯我超电磁炮永世长存！</p>
-        <img src="https://i.postimg.cc/59pNRkXh/5-AC3-D357-BCB3-4-B51-8641-F4-B45-FA2045-B.png" alt="炮姐硬币" style="width:80px;height:80px;float:left;">
-        <img src="https://i.postimg.cc/KY5d8ChF/B2-AC5502-B7-DE-48-E8-90-AE-0-A65-AFCAF5-CE-removebg-preview.png" alt="呱太徽章" style="width:87px;height:86px;float:right;">
-      </div>
-      <br><br><br><hr class="default-line" /><!--好久不写格式忘光了。。。-->
-      <!-- The contents -->
+    </section>
+    <aside class="sidebar">
+      <a href="./pages/about-railgun">关于美琴</a>
+      <a href="./pages/photos">美琴照片墙</a>
+      <a href="./pages/isml" target="_blank">世萌比赛</a>
+      <a href="./pages/contact">developing</a>
+    </aside>
+    <main class="container">
+      <iframe
+        frameborder="no"
+        border="0"
+        marginwidth="0"
+        marginheight="0"
+        width="100%"
+        height="86"
+        src="https://music.163.com/outchain/player?type=2&id=28012031&auto=1&height=66"
+      ></iframe>
+      <hr />
       <h3>Hi，朋友，你好！</h3>
-      <p>如果你还不了解御坂美琴的话，这个页面可能会帮到你！欢迎访问导航栏中的“关于电磁炮”栏目详细了解御坂美琴。</p>
-      <p>御坂美琴(简介)：为人正义感强，是一个有着男孩子般的爽朗性格的中学生，但是却没有耐心，非常不坦率。<del>（遇到当麻会脸红）</del></p>
-      <img src="/pic/FCEC7B04-38C6-48CB-862A-6FD9BC1F75DF.png" alt="炮姐吃蛋糕" style="width:180px;height:180px;float:right;">
-      <br><hr class="dotted-line" />
+      <p>
+        如果你还不了解御坂美琴的话，这个页面可能会帮到你！欢迎访问导航栏中的“关于电磁炮”栏目详细了解御坂美琴。
+      </p>
+      <p>
+        御坂美琴(简介)：为人正义感强，是一个有着男孩子般的爽朗性格的中学生，但是却没有耐心，非常不坦率。
+        <del>（遇到当麻会脸红）</del>
+      </p>
+      <img
+        src="./assets/FCEC7B04-38C6-48CB-862A-6FD9BC1F75DF.png"
+        alt="炮姐吃蛋糕"
+        style="width: 180px; height: 180px; float: right"
+      />
+      <hr />
       <h3>你也是个炮厨？</h3>
       <p>那不妨来试试这个网站的功能吧！</p>
-      <p>功能介绍：网站的功能很简单，在页面顶部的导航栏就有显示哦。目前开发完成的功能如下：</p></br>
-      <p>超电磁炮小百科：新人可以初步了解御坂美琴的性格、人设等信息。</p></br>
+      <p>
+        功能介绍：网站的功能很简单，在页面顶部的导航栏就有显示哦。目前开发完成的功能如下：
+      </p>
+      <p>超电磁炮小百科：新人可以初步了解御坂美琴的性格、人设等信息。</p>
       <p>美琴相册：收集、分享美琴的照片</p>
-      <hr class="dotted-line" />
-      <h3>什么？想加入计划？<a href="https://github.com/misaka-fans/misaka-fans.github.io" target="_blank"><img src="https://img.shields.io/github/stars/misaka-fans/misaka-fans.github.io" /></a></h3>
-      <p>如果你想参加开发这个网页，或有好的建议，欢迎联系<a href="mailto:crqboy2008@163.com">crqboy2008@163.com</a>或在bilibili私信<a href="https://space.bilibili.com/1421279902?spm_id_from=333.337.search-card.all.click" target="_blank">@shbwb</a>，也可以访问<a href="https://github.com/misaka-fans/misaka-fans.github.io" target="_blank">开源</a>页面获取更多信息！</p>
-      <p>我正在考虑搭建御坂美琴主题的<a href="https://github.com/LAX1DUDE/eaglercraft" target="_blank">Minecraft服务器</a>（或者网页小游戏），不过受我的设备限制（iPadOs），开发会遇到很多问题，所以短期内不会实现。如果你有成品愿意提供，请联系上述邮箱，非常感谢！</p>
-      <hr class="dotted-line" />
-      <p style="color:#d1d1d1;text-align:center;">&copy 2022 shbwb(misaka-fans)</p>
-      <p style="color:#d1d1d1;text-align:center;"><span id="busuanzi_container_site_uv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></p><br>
-    </div>
+      <hr />
+      <h3>什么？想加入计划？</h3>
+      <a href="https://github.com/misaka-fans/misaka-fans.github.io"
+        target="_blank">
+        <img src="https://img.shields.io/github/stars/misaka-fans/misaka-fans.github.io"/>
+      </a>
+      <p>
+        如果你想参加开发这个网页，或有好的建议，欢迎联系<a
+          href="mailto:crqboy2008@163.com"
+          >crqboy2008@163.com</a
+        >或在bilibili私信<a
+          href="https://space.bilibili.com/1421279902?spm_id_from=333.337.search-card.all.click"
+          target="_blank"
+          >@shbwb</a
+        >，也可以访问<a
+          href="https://github.com/misaka-fans/misaka-fans.github.io"
+          target="_blank"
+          >开源</a
+        >页面获取更多信息！
+      </p>
+      <p>
+        我正在考虑搭建御坂美琴主题的<a
+          href="https://github.com/LAX1DUDE/eaglercraft"
+          target="_blank"
+          >Minecraft服务器</a
+        >（或者网页小游戏），不过受我的设备限制（iPadOs），开发会遇到很多问题，所以短期内不会实现。如果你有成品愿意提供，请联系上述邮箱，非常感谢！
+      </p>
+    </main>
+    <footer>
+      <p>&copy 2022 shbwb(misaka-fans)</p>
+      <p>
+        <span id="busuanzi_container_site_uv"
+          >本站总访问量<span id="busuanzi_value_site_pv"></span>次</span
+        >
+      </p>
+    </footer>
   </body>
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><!--不蒜子计数器插件-->
+  <script
+    async
+    src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+  ></script>
 </html>
