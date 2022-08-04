@@ -17,6 +17,7 @@
     />
     <title>Misaka Mikoto -- 御坂美琴「爱我超电磁炮」</title>
     <script src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/del-text.js"></script>
     <link rel="stylesheet" href="./styles/main.css" />
     <link
       rel="stylesheet"
@@ -25,7 +26,7 @@
   </head>
   <body>
     <header class="header">
-      <button class="sidebar-toggler material-symbols-outlined">menu</button>
+      <button class="sidebar-toggler icon-btn material-symbols-outlined">menu</button>
       <h1>爱我超电磁炮</h1>
     </header>
     <section class="banner">
@@ -46,10 +47,10 @@
       </ul>
     </section>
     <aside class="sidebar">
-      <a href="./pages/about-railgun">关于美琴</a>
-      <a href="./pages/photos">美琴照片墙</a>
-      <a href="./pages/isml" target="_blank">世萌比赛</a>
-      <a href="./pages/discuss">留言版（developing）</a>
+      <a href="./pages/about-railgun/">关于美琴</a>
+      <a href="./pages/photos/">美琴照片墙</a>
+      <a href="./pages/isml/" target="_blank">世萌比赛</a>
+      <a href="./pages/discuss/">留言版（developing）</a>
     </aside>
     <main class="container">
       <iframe
@@ -68,7 +69,7 @@
       </p>
       <p>
         御坂美琴(简介)：为人正义感强，是一个有着男孩子般的爽朗性格的中学生，但是却没有耐心，非常不坦率。
-        <del>（遇到当麻会脸红）</del>
+        <del-text>（遇到当麻会脸红）</del-text>
       </p>
       <img
         src="./assets/FCEC7B04-38C6-48CB-862A-6FD9BC1F75DF.png"
@@ -85,9 +86,13 @@
       <p>美琴相册：收集、分享美琴的照片</p>
       <hr />
       <h3>什么？想加入计划？</h3>
-      <a href="https://github.com/misaka-fans/misaka-fans.github.io"
-        target="_blank">
-        <img src="https://img.shields.io/github/stars/misaka-fans/misaka-fans.github.io"/>
+      <a
+        href="https://github.com/misaka-fans/misaka-fans.github.io"
+        target="_blank"
+      >
+        <img
+          src="https://img.shields.io/github/stars/misaka-fans/misaka-fans.github.io"
+        />
       </a>
       <p>
         如果你想参加开发这个网页，或有好的建议，欢迎联系<a
