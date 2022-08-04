@@ -52,6 +52,14 @@
   transition: 240ms cubic-bezier(.4, 0, .2, 1);
   border-radius: 9999px;
 }
+.wl-emoji-popup .wl-tabs {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.wl-emoji-popup .wl-tab {
+  width: unset;
+  min-width: 2rem;
+}
 /* end */
 html {
   overflow-x: hidden;
