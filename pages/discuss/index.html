@@ -4,15 +4,23 @@
     name="viewport"
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="manifest" href="/pwa/manifest.json" />
+    <link rel="shortcut icon" href="/assets/128.ico" />
+    <meta name="description" content="留言板" />
   <title>留言板</title>
   <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
   <link
     rel="stylesheet"
     href="https://unpkg.com/@waline/client@v2/dist/waline.css"
   />
+  <link rel="stylesheet" href="../../styles/main.css" />
 </head>
 <body>
-  <!-- ... -->
+  <header class="header">
+      <a href="../../" class="icon-btn material-symbols-outlined">arrow_back</a>
+      <h1>美琴照片墙</h1>
+  </header>
   <div id="waline"></div>
   <script>
     Waline.init({
