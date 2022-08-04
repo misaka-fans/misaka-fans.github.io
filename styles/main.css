@@ -2,12 +2,57 @@
 ::after,
 ::before {
   font-family: sans-serif;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 :root {
   --theme-color: #c49582 ;
+  --theme-color-variant: #c37a5d;
   --on-theme-color: #ffffff;
+  --waline-theme-color: var(--theme-color);
+  --waline-active-color: var(--theme-color-variant);
+  --waline-badge-color: var(--theme-color);
+  --waline-font-size: 1rem;
 }
+/* waline */
+.wl-panel {
+  margin: 0;
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.wl-header label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.825rem;
+  font-weight: 500;
+}
+.wl-header input {
+  font-size: inherit;
+}
+.wl-editor {
+  transition: none;
+}
+.wl-editor, .wl-input {
+  caret-color: var(--theme-color);
+}
+.wl-editor:focus, .wl-input:focus {
+  background: transparent;
+}
+.wl-btn {
+  padding: 0 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  height: 36px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: 240ms cubic-bezier(.4, 0, .2, 1);
+  border-radius: 9999px;
+}
+/* end */
 html {
   overflow-x: hidden;
 }
