@@ -101,11 +101,11 @@ a,
   -moz-appearance: none;
   appearance: none;
 }
-a:not(.icon-btn) {
+:not(.sidebar) > a:not(.icon-btn) {
   color: var(--theme-color);
   text-decoration: none;
 }
-a:not(.icon-btn):hover {
+:not(.sidebar) > a:not(.icon-btn):hover {
   text-decoration: underline;
 }
 
