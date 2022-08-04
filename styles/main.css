@@ -12,6 +12,7 @@
   --waline-active-color: var(--theme-color-variant);
   --waline-badge-color: var(--theme-color);
   --waline-font-size: 1rem;
+  scroll-behavior: smooth;
 }
 /* waline */
 .wl-panel {
@@ -52,6 +53,14 @@
   transition: 240ms cubic-bezier(.4, 0, .2, 1);
   border-radius: 9999px;
 }
+.wl-emoji-popup .wl-tabs {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.wl-emoji-popup .wl-tab {
+  width: unset;
+  min-width: 2rem;
+}
 /* end */
 html {
   overflow-x: hidden;
@@ -59,6 +68,7 @@ html {
 body {
   position: absolute;
   margin: 0;
+  padding-bottom: 56px;
   min-height: 100vh;
   max-width: 100vw;
   width: 100%;
@@ -91,11 +101,12 @@ a,
   -moz-appearance: none;
   appearance: none;
 }
-a:not(.icon-btn) {
+:not(.sidebar) > a:not(.icon-btn) {
   color: var(--theme-color);
-}
-a:not(.icon-btn):not(:hover) {
   text-decoration: none;
+}
+:not(.sidebar) > a:not(.icon-btn):hover {
+  text-decoration: underline;
 }
 
 /* If CSS can do, why JavaScript? */
@@ -131,7 +142,7 @@ a:not(.icon-btn):not(:hover) {
   height: inherit;
 }
 hr {
-  margin: 36px 0 0 12px;
+  margin: 36px 0 12px 0;
   height: 4px;
   border: 0;
   background: repeating-linear-gradient(
@@ -184,21 +195,50 @@ hr {
   cursor: pointer;
   overflow: hidden;
 }
-.icon-btn::before {
+.icon-btn::before,
+.fab::before,
+.sidebar a::before {
   content: "";
   position: absolute;
   inset: 0;
   background-color: currentColor;
   opacity: 0;
 }
-.icon-btn:hover::before {
+.icon-btn:hover::before,
+.fab:hover::before,
+.sidebar a:hover::before {
   opacity: 0.08;
 }
-.icon-btn:focus-visible::before {
+.icon-btn:focus-visible::before,
+.fab:focus-visible::before,
+.sidebar a:focus-visible:before {
   opacity: 0.12;
 }
-.icon-btn:active::before {
+.icon-btn:active::before,
+.fab:active::before,
+.sidebar a:active:before {
   opacity: 0.16;
+}
+.fab {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--theme-color);
+  color: var(--on-theme-color) !important;
+  text-decoration: none !important;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
 }
 .sidebar {
   position: fixed;
@@ -231,22 +271,6 @@ hr {
   text-decoration: none;
   border-radius: 6px;
   overflow: hidden;
-}
-.sidebar a::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: currentColor;
-  opacity: 0;
-}
-.sidebar a:hover::before {
-  opacity: 0.08;
-}
-.sidebar a:focus-visible::before {
-  opacity: 0.12;
-}
-.sidebar a:active::before {
-  opacity: 0.16;
 }
 .banner {
   min-height: 64px;
