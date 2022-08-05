@@ -21,7 +21,8 @@
 在满足上一项条件后，你可以通过[fork](https://github.com/misaka-fans-photos/misaka-fans-photos.github.io/fork)，并提交Pull Request的方式，在[专属仓库](https://github.com/misaka-fans-photos/misaka-fans-photos.github.io/tree/main/pic)中提交照片！照片将在网页的特殊页面中展示！
 
 ## 贡献者
-网页格式整理、优化：https://github.com/huge-pancake
+网页格式整理、优化：[Huge Pancake](https://github.com/huge-pancake)
+
 说明：对于对此项目有贡献的炮厨，TA的GitHub账户名（也可提供哔哩哔哩或百度贴吧账号名），将会展现在这个页面。
 
 
