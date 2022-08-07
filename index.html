@@ -1,134 +1,96 @@
 <!-- 鸣谢 网页整顿 by @huge-pancake -->
 <!DOCTYPE html>
 <html lang="zh-hans">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="manifest" href="/pwa/manifest.json" />
+  <link rel="shortcut icon" href="/assets/128.ico" />
+  <meta name="description" content="一个炮厨为姐姐大人建立的网站，欢迎前来讨论！" />
+  <meta name="keywords" content="御坂美琴, Misaka, Mikoto, Misaka Mikoto, Toaru, 魔法禁书目录, 科学超电磁炮, 某科学的超电磁炮, shbwb" />
+  <title>Misaka Mikoto -- 御坂美琴「爱我超电磁炮」</title>
+  <script src="./scripts/main.js"></script>
+  <script type="module" src="./scripts/del-text.js"></script>
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="/styles/font.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <link rel="stylesheet" href="./styles/fontmod.css"
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="manifest" href="/pwa/manifest.json" />
-    <link rel="shortcut icon" href="/assets/128.ico" />
-    <meta
-      name="description"
-      content="一个炮厨为姐姐大人建立的网站，欢迎前来讨论！"
-    />
-    <meta
-      name="keywords"
-      content="御坂美琴, Misaka, Mikoto, Misaka Mikoto, Toaru, 魔法禁书目录, 科学超电磁炮, 某科学的超电磁炮, shbwb"
-    />
-    <title>Misaka Mikoto -- 御坂美琴「爱我超电磁炮」</title>
-    <script src="./scripts/main.js"></script>
-    <script type="module" src="./scripts/del-text.js"></script>
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
   </head>
-  <body>
-    <header class="header">
-      <button class="sidebar-toggler icon-btn material-symbols-outlined">menu</button>
-      <h1>爱我超电磁炮</h1>
-    </header>
-    <section class="banner">
-      <p>
-        君の指先を舞ってる電光は、私の一生変わらない信仰であり、このレールガンだけが永遠！
-      </p>
-    </section>
-    <section class="marquee">
-      <ul>
-        <li>
-          <img
-            src="https://i.postimg.cc/wMsphBrV/12-C5580-A-74-F0-4291-B79-E-F4-D900-A39493.jpg"
-          />
-        </li>
-        <li><img src="https://i.postimg.cc/7LRkW7S4/639780.png" /></li>
-        <li><img src="https://i.postimg.cc/Y2XJnt3f/919163.jpg" /></li>
-        <li><img src="https://i.postimg.cc/jjscY7qW/IMG-4152.jpg" /></li>
-      </ul>
-    </section>
-    <aside class="sidebar">
-      <a href="./pages/about-railgun/">关于美琴</a>
-      <a href="./pages/photos/">美琴照片墙</a>
-      <a href="./pages/isml/" target="_blank">世萌比赛</a>
-      <a href="./pages/discuss/">留言板</a>
-      <a href="./pages/about/">声明&信息（updating）</a>
-    </aside>
-    <main class="container">
-      <iframe
-        frameborder="no"
-        border="0"
-        marginwidth="0"
-        marginheight="0"
-        width="100%"
-        height="86"
-        src="https://music.163.com/outchain/player?type=2&id=28012031&auto=1&height=66"
-      ></iframe>
-      <hr />
-      <h3>Hi，朋友，你好！</h3>
-      <p>
-        如果你还不了解御坂美琴的话，这个页面可能会帮到你！欢迎访问导航栏中的“关于电磁炮”栏目详细了解御坂美琴。
-      </p>
-      <p>
-        御坂美琴(简介)：为人正义感强，是一个有着男孩子般的爽朗性格的中学生，但是却没有耐心，非常不坦率。
-        <del-text>（遇到当麻会脸红）</del-text>
-      </p>
-      <img
-        src="./assets/FCEC7B04-38C6-48CB-862A-6FD9BC1F75DF.png"
-        alt="炮姐吃蛋糕"
-        style="width: 180px; height: 180px; float: right"
-      />
-      <hr />
-      <h3>你也是个炮厨？</h3>
-      <p>那不妨来试试这个网站的功能吧！</p>
-      <p>
-        功能介绍：网站的功能很简单，在页面顶部的导航栏就有显示哦。目前开发完成的功能如下：
-      </p>
-      <p>超电磁炮小百科：新人可以初步了解御坂美琴的性格、人设等信息。</p>
-      <p>美琴相册：收集、分享美琴的照片</p>
-      <hr />
-      <h3>什么？想加入计划？</h3>
-      <a
-        href="https://github.com/misaka-fans/misaka-fans.github.io"
-        target="_blank"
-      >
-        <img
-          src="https://img.shields.io/github/stars/misaka-fans/misaka-fans.github.io"
-        />
-      </a>
-      <p>
-        如果你想参加开发这个网页，或有好的建议，欢迎联系<a
-          href="mailto:crqboy2008@163.com"
-          >crqboy2008@163.com</a
-        >或在bilibili私信<a
-          href="https://space.bilibili.com/1421279902?spm_id_from=333.337.search-card.all.click"
-          target="_blank"
-          >@shbwb</a
-        >，也可以访问<a
-          href="https://github.com/misaka-fans/misaka-fans.github.io"
-          target="_blank"
-          >开源</a
-        >页面获取更多信息！
-      </p>
-      <p>
-        我正在考虑搭建御坂美琴主题的<a
-          href="https://github.com/LAX1DUDE/eaglercraft"
-          target="_blank"
-          >Minecraft服务器</a
-        >（或者网页小游戏），不过受我的设备限制（iPadOs），开发会遇到很多问题，所以短期内不会实现。如果你有成品愿意提供，请联系上述邮箱，非常感谢！
-      </p>
-    </main>
-    <footer>
-      <p>&copy 2022 shbwb(misaka-fans)</p>
-      <p>
-        <span id="busuanzi_container_site_uv"
-          >本站总访问量<span id="busuanzi_value_site_pv"></span>次</span
-        >
-      </p>
-      <a href="https://icp.gov.moe/?keyword=20220436" target="_blank">萌ICP备20220436号</a>
-    </footer>
-  </body>
-  <script
-    async
-    src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
-  ></script>
+  <header class="header">
+    <button class="sidebar-toggler icon-btn material-symbols-outlined">menu</button>
+    <h1>爱我超电磁炮</h1>
+  </header>
+  <section class="banner">
+    <p style="font-size: 120%;font-family: 'LXGW WenKai';">
+      君の指先を舞ってる電光は、私の一生変わらない信仰であり、このレールガンだけが永遠！
+    </p>
+  </section>
+  <section class="marquee">
+    <ul>
+      <li>
+        <img src="https://i.postimg.cc/wMsphBrV/12-C5580-A-74-F0-4291-B79-E-F4-D900-A39493.jpg" />
+      </li>
+      <li><img src="https://i.postimg.cc/7LRkW7S4/639780.png" /></li>
+      <li><img src="https://i.postimg.cc/Y2XJnt3f/919163.jpg" /></li>
+      <li><img src="https://i.postimg.cc/jjscY7qW/IMG-4152.jpg" /></li>
+    </ul>
+  </section>
+  <aside class="sidebar">
+    <a href="./pages/about-railgun/">关于美琴</a>
+    <a href="./pages/photos/">美琴照片墙</a>
+    <a href="./pages/isml/" target="_blank">世萌比赛</a>
+    <a href="./pages/discuss/">留言板</a>
+    <a href="./pages/about/">声明&信息（updating）</a>
+  </aside>
+  <main class="container">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86"
+      src="https://music.163.com/outchain/player?type=2&id=28012031&auto=1&height=66"></iframe>
+    <hr />
+    <h3>Hi，朋友，你好！</h3>
+    <p>
+      如果你还不了解御坂美琴的话，这个页面可能会帮到你！欢迎访问导航栏中的“关于电磁炮”栏目详细了解御坂美琴。
+    </p>
+    <p>
+      御坂美琴(简介)：为人正义感强，是一个有着男孩子般的爽朗性格的中学生，但是却没有耐心，非常不坦率。
+      <del-text>（遇到当麻会脸红）</del-text>
+    </p>
+    <img src="./assets/FCEC7B04-38C6-48CB-862A-6FD9BC1F75DF.png" alt="炮姐吃蛋糕"
+      style="width: 180px; height: 180px; float: right" />
+    <hr />
+    <h3>你也是个炮厨？</h3>
+    <p>那不妨来试试这个网站的功能吧！</p>
+    <p>
+      功能介绍：网站的功能很简单，在页面顶部的导航栏就有显示哦。目前开发完成的功能如下：
+    </p>
+    <p>超电磁炮小百科：新人可以初步了解御坂美琴的性格、人设等信息。</p>
+    <p>美琴相册：收集、分享美琴的照片</p>
+    <hr />
+    <h3>什么？想加入计划？</h3>
+    <a href="https://github.com/misaka-fans/misaka-fans.github.io" target="_blank">
+      <img src="https://img.shields.io/github/stars/misaka-fans/misaka-fans.github.io" />
+    </a>
+    <p>
+      如果你想参加开发这个网页，或有好的建议，欢迎联系<a href="mailto:crqboy2008@icloud.com">crqboy2008@icloud.com</a>或在bilibili私信<a
+        href="https://space.bilibili.com/1421279902?spm_id_from=333.337.search-card.all.click"
+        target="_blank">@shbwb</a>，也可以访问<a href="https://github.com/misaka-fans/misaka-fans.github.io"
+        target="_blank">开源页面</a>获取更多信息！
+    </p>
+    <p>
+      我正在考虑搭建御坂美琴主题的<a href="https://github.com/LAX1DUDE/eaglercraft"
+        target="_blank">Minecraft服务器</a>（或者网页小游戏），不过受我的设备限制（iPadOs），开发会遇到很多问题，所以短期内不会实现。如果你有成品愿意提供，请联系上述邮箱，非常感谢！
+    </p>
+  </main>
+</body>
+<footer>
+  <embed src="./styles/footer.html">
+</footer>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 </html>
