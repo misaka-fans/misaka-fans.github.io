@@ -14,6 +14,22 @@
   --waline-font-size: 1rem;
   scroll-behavior: smooth;
 }
+.meme {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16rem;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 0;
+}
+.main-title {
+  padding: 10px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
 /* waline */
 .wl-panel {
   margin: 0;
