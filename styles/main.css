@@ -163,6 +163,16 @@ a,
 .contributor-card .commits::before {
   content: "Commits: ";
 }
+@media (max-width: 768px) {
+  .contributors {
+    column-count: 2;
+  }
+}
+@media (max-width: 480px) {
+  .contributors {
+    column-count: 1;
+  }
+}
 
 /* If CSS can do, why JavaScript? */
 @keyframes scroll {
