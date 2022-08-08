@@ -1,3 +1,6 @@
+/**
+ * @author: huge-pancake
+ */
 export default class DelText extends HTMLElement {
   static get is() {
     return 'del-text';

@@ -23,6 +23,9 @@ const initBTT = () => {
   btt.addEventListener('click', handleClick);
 }
 
+/**
+ * @author: huge-pancake
+ */
 const init = () => {
   initScroll();
   initSidebar();

@@ -1,3 +1,6 @@
+/**
+ * @author: huge-pancake
+ */
 export default class ImgLink extends HTMLElement {
   static get is() {
     return 'img-a';
