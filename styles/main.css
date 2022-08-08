@@ -138,16 +138,17 @@ a,
   text-decoration: underline;
 }
 .contributors {
-  margin-top: 6px;
+  margin-top: 5px;
   column-count: 3;
-  column-gap: 10px;
+  column-gap: 5px;
 }
 .contributor-card {
   display: inline-block;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 16px;
-  border: 1px solid #171717;
+  border: 1px solid #17171733;
+  width: 100%;
 }
 .contributor-card .name {
   display: block;
