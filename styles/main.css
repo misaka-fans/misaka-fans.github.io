@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Sans+SC:wght@300;400;500&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.6.0/lxgwwenkai-regular.css');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
 *,
 ::after,
 ::before {
-  font-family: "Noto Sans SC", "Noto Sans JP", sans-serif;
+  font-family: 'LXGW WenKai', cursive;
   box-sizing: border-box !important;
 }
 :root {
