@@ -154,8 +154,14 @@ a,
   margin-bottom: 10px;
 }
 .contributor-card p,
-.contributor-card .commit {
+.contributor-card .commits {
   font-size: 0.875rem;
+}
+.contributor-card .commits {
+  font-weight: 500;
+}
+.contributor-card .commits::before {
+  content: "Commits: ";
 }
 
 /* If CSS can do, why JavaScript? */
