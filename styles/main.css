@@ -25,6 +25,17 @@
   pointer-events: none;
   z-index: 0;
 }
+@media (max-width: 1200px) {
+  .meme {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 768px) {
+  .meme {
+    font-size: 4rem;
+  }
+}
+
 .main-title {
   padding: 10px 0;
   font-size: 1.25rem;
