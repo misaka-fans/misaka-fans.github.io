@@ -14,7 +14,7 @@ export default class ImgLink extends HTMLElement {
   get prefixUrl() {
     return (
       this.parentNode.getAttribute("prefix-url") ||
-      "https://img.misaka-mikoto.jp/pic"
+      "https://img.misaka-mikoto.jp/pic/"
     );
   }
   constructor() {
@@ -26,9 +26,8 @@ export default class ImgLink extends HTMLElement {
     if (!this.shadowRoot) return;
     this.shadowRoot.innerHTML = `
       <style>${this.renderStyle()}</style>
-      <a href="${this.prefixUrl + this.url}" title="${
-      this.text
-    }" target="_blank">
+      <a href="${this.prefixUrl + this.url}" title="${this.text
+      }" target="_blank">
         <img src="${this.prefixUrl + this.url}" alt="${this.text}" />
       </a>
     `;
