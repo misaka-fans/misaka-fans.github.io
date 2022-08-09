@@ -35,7 +35,7 @@ export default class ContributorCard extends HTMLElement {
         </div>
         <div class="info">
         <span class="name">${this.name}</span>
-          <a class="github" href="https://github.com/${this.username}"><i class="fa fa-github"></i>@${
+          <a class="github" href="https://github.com/${this.username}">@${
       this.username
     }</a>
           <a class="email" href="mailto:${this.email}">*联系</a>
