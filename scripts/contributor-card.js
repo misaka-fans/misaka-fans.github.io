@@ -48,7 +48,7 @@ export default class ContributorCard extends HTMLElement {
           </a>
           <a class="email" href="mailto:${this.email}">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M6.542 34.583q-1.834 0-3.125-1.333-1.292-1.333-1.292-3.083V9.833q0-1.791 1.292-3.125 1.291-1.333 3.125-1.333h26.916q1.834 0 3.146 1.333 1.313 1.334 1.313 3.125v20.334q0 1.75-1.313 3.083-1.312 1.333-3.146 1.333Zm13.458-12L6.542 13.625v16.542h26.916V13.625Zm0-3.875 13.375-8.875H6.667ZM6.5 13.625V9.833 30.167h.042H6.5Z"/></svg>
-            E-mail
+            ${this.email}
           </a>
         </div>
       </div>

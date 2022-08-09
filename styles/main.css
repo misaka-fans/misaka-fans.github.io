@@ -139,20 +139,15 @@ a,
 }
 .contributors {
   margin-top: 16px;
-  column-count: 4;
+  column-count: 3;
   column-gap: 16px;
 }
 @media (max-width: 1080px) {
   .contributors {
-    column-count: 3;
-  }
-}
-@media (max-width: 780px) {
-  .contributors {
     column-count: 2;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 780px) {
   .contributors {
     column-count: 1;
   }
