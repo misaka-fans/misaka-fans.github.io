@@ -32,6 +32,11 @@ const init = () => {
   initScroll();
   initSidebar();
   initBTT();
+
+  let maxWidth = localStorage.getItem("maxWidth") === 'true';
+  if (maxWidth) {
+    document.querySelector('.container').classList.add('max-width');
+  }
 };
 
 addEventListener("DOMContentLoaded", init);

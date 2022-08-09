@@ -337,6 +337,8 @@ hr {
 }
 .container {
   padding: 24px 24px 24px 40px;
+}
+.container.max-width {
   max-width: 1080px;
   margin: auto;
 }
