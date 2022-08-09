@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <script src="../../scripts/main.js"></script>
-    <script type="module" src="../../scripts/del-text.js"></script>
+    <script type="module" src="../../scripts/contributor-card.js"></script>
     <style>
       img {
         max-width: 100%;
@@ -30,7 +30,6 @@
       }
     </style>
   </head>
-  <html src="../../styles/font.html"></html>
   <body>
     <header class="header">
       <a href="../../" class="icon-btn material-symbols-outlined">arrow_back</a>
@@ -55,55 +54,43 @@
         style="padding-left: 10px"
         >详情</a
       >
+
       <div class="contributors">
-        <div class="contributor-card">
-          <a href="https://github.com/shbwb" target="_blank"
-            ><span class="material-symbols-outlined"> account_circle </span
-            >@misaka-fans(shbwb)</a
-          ><br />
-          <a href="mailto:shbwb@misaka-mikoto.jp"
-            ><span class="material-symbols-outlined"> mail </span>
-            <span>shbwb@misaka-mikoto.jp</span>
-          </a>
-          <p>主要工作：绝大多数内容，留言板，PWA，照片收集、整理</p>
-        </div>
-        <div class="contributor-card">
-          <a href="https://github.com/yutou1151" target="_blank"
-            ><span class="material-symbols-outlined"> account_circle </span
-            >@yutou1151(曾鼋棨)</a
-          ><br />
-          <a href="mailto:yutou1151@misaka-mikoto.jp"
-            ><span class="material-symbols-outlined"> mail </span>
-            <span>yutou1151@misaka-mikoto.jp</span>
-          </a>
-          <p>主要工作：字体，格式化，代码复用，服务器&域名提供</p>
-        </div>
-        <div class="contributor-card">
-          <a href="https://github.com/huge-pancake" target="_blank"
-            ><span class="material-symbols-outlined"> account_circle </span
-            >@huge-pancake(HugePancake)</a
-          ><br />
-          <a href="mailto:huge.pancake.zxr@gmail.com"
-            ><span class="material-symbols-outlined"> mail </span>
-            <span>huge.pancake.zxr@gmail.com</span>
-          </a>
-          <p>主要工作：样式，文件格式整理</p>
-        </div>
-        <div class="contributor-card">
-          <a href="https://github.com/xs10l3" target="_blank"
-            ><span class="material-symbols-outlined"> account_circle </span
-            >@xs10l3</a
-          ><br />
-          <a href="mailto:1526394815@qq.com"
-            ><span class="material-symbols-outlined"> mail </span>
-            <span>1526394815@qq.com</span>
-          </a>
-          <p>主要工作：搭建评论系统，人类验证</p>
-        </div>
+        <con-card
+          username="misaka-fans"
+          name="Misaka Fans"
+          email="shbwb@misaka-mikoto.jp"
+          >主要贡献：绝大多数内容，留言板，PWA，照片收集、整理</con-card
+        >
+        <con-card
+          username="huge-pancake"
+          name="HugePancake"
+          email="huge.pancake.zxr@gmail.com"
+          >主要贡献：样式，package 相关，规范化，代码复用</con-card
+        >
+        <con-card
+          username="yutou1151"
+          name="曾鼋棨"
+          email="yutou1151@misaka-mikoto.jp"
+          >主要贡献：字体，格式化，代码复用，服务器&域名提供</con-card
+        >
+        <con-card username="xs10l3" name="xs10l3" email="1526394815@qq.com"
+          >主要贡献：搭建评论系统，人类验证</con-card
+        >
+        <con-card username="..." name="..." email="you@example.com"
+          >期待你的加入</con-card
+        >
+        <con-card username="..." name="..." email="you@example.com"
+          >期待你的加入</con-card
+        >
+        <con-card username="..." name="..." email="you@example.com"
+          >期待你的加入</con-card
+        >
       </div>
     </div>
+
+    <footer>
+      <embed src="../../styles/footer.html" />
+    </footer>
   </body>
-  <footer>
-    <embed src="../../styles/footer.html" />
-  </footer>
 </html>
