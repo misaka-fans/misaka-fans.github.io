@@ -1,0 +1,19 @@
+.col-sm-12,
+.col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+@media (min-width: 768px) {
+
+    .col-sm-12,
+    .col-sm-9 {
+        float: left
+    }
+
+    .col-sm-12 {
+        width: 100%
+    }
+}
