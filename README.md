@@ -26,7 +26,7 @@
 
 ## 贡献者
 
-说明：对于对此项目有贡献的炮厨，TA 的 GitHub 账户名，将会展现在[Anout](https://misaka-mikoto.jp/about)页面。
+说明：对于对此项目有贡献的炮厨，TA 的 GitHub 账户名，将会展现在[About](https://misaka-mikoto.jp/pages/about)页面。
 
 ## 开发
 
