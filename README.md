@@ -26,9 +26,7 @@
 
 ## 贡献者
 
-网页格式整理、优化：[Huge Pancake](https://github.com/huge-pancake)
-
-说明：对于对此项目有贡献的炮厨，TA 的 GitHub 账户名（也可提供哔哩哔哩或百度贴吧账号名），将会展现在这个页面。
+说明：对于对此项目有贡献的炮厨，TA 的 GitHub 账户名，将会展现在[Anout](https://misaka-mikoto.jp/about)页面。
 
 ## 开发
 
