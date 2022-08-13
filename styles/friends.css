@@ -1,17 +1,62 @@
-.clearfix {zoom:1;}
-.clearfix:after {content:'.';display:block;visibility:hidden;height:0;clear:both;}
-.readers-list {list-style:none;}
-.readers-list *{margin:0;padding:0;}
-.readers-list li{position:relative;float:left;margin-top:20px!important;padding:0 10px;}
-.readers-list li a{display:block;border:1px solid #eee;border-left: 3px solid ##c49582;border-radius:6px;padding-left:15px;transition:all .3s;color: white;}
-.readers-list li a div{padding:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#999;}
-.readers-list li a div:first-child{border-bottom:1px dashed #eee;font-size:1.3em;color:#666;}
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	content: '.';
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+.readers-list {
+	list-style: none;
+}
+
+.readers-list * {
+	margin: 0;
+	padding: 0;
+}
+
+.readers-list li {
+	position: relative;
+	float: left;
+	margin-top: 20px !important;
+	padding: 0 10px;
+}
+
+.readers-list li a {
+	display: block;
+	border: 1px solid #eee;
+	border-left: 3px solid ##c49582;
+	border-radius: 6px;
+	padding-left: 15px;
+	transition: all .3s;
+	color: white;
+}
+
+.readers-list li a div {
+	padding: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #999;
+}
+
+.readers-list li a div:first-child {
+	border-bottom: 1px dashed #eee;
+	font-size: 1.3em;
+	color: #666;
+}
+
 .readers-list li a:hover {
 	-webkit-transform: translateY(-6px);
 	transform: translateY(-6px);
-	box-shadow: 0 26px 40px -24px rgba(0,0,0,0.3);
+	box-shadow: 0 26px 40px -24px rgba(0, 0, 0, 0.3);
 }
+
 .page-friends ul {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
