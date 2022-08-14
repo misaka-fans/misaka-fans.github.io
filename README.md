@@ -22,7 +22,7 @@
 
 **2、照片收集**
 
-在满足上一项条件后，你可以通过[fork](https://github.com/misaka-fans-photos/misaka-fans-photos.github.io/fork)，并提交 Pull Request 的方式，在[专属仓库](https://github.com/misaka-fans-photos/misaka-fans-photos.github.io/tree/main/pic)中提交照片！照片将在网页的特殊页面中展示！
+在满足上一项条件后，你可以通过[fork](https://github.com/misaka-fans-photos/misaka-fans-photos.github.io/fork)，并提交 Pull Request 的方式，提交自己创作的功能。
 
 ## 贡献者
 
@@ -36,7 +36,7 @@
 https://misaka-fans-photos.github.io/
 ```
 
-插件：Pio 看板娘
+插件：Pio看板娘
 
 镜像网站：https://misaka-fans.netlify.app
 (Netlify)--本人在使用网易云电脑测试访问时（浏览器：edge，系统：Windows10），发现 GitHub pages 会重定向至错误网站，镜像备份访问正常。此页面大量劫持无辜网页！
