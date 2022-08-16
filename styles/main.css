@@ -34,7 +34,7 @@
 }
 .atk-main-editor > .atk-header {
   gap: 8px;
-  padding: 12px 12px 0 !important;
+  padding: 12px 12px 2px !important;
 }
 .atk-main-editor > .atk-bottom {
   padding: 8px !important;
