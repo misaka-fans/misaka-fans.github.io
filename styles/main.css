@@ -25,7 +25,7 @@
   position: fixed !important;
   top: 64px;
   width: 100%;
-  height: 236px;
+  height: 238px;
   margin-bottom: 0 !important;
   border: 0 !important;
   border-radius: 0 !important;
@@ -40,7 +40,7 @@
   padding: 8px !important;
 }
 .artalk > .atk-list {
-  padding: 236px 0 !important;
+  padding: 238px 0 !important;
 }
 /* input */
 .atk-main-editor > .atk-header input {
