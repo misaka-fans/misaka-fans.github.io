@@ -29,7 +29,7 @@
 .readers-list li a {
 	display: block;
 	border: 1px solid #eee;
-	border-left: 3px solid ##c49582;
+	border-left: 3px solid #c49582;
 	border-radius: 6px;
 	padding-left: 15px;
 	transition: all .3s;
