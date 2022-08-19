@@ -34,6 +34,8 @@
 
 ```
 https://misaka-fans-photos.github.io/
+
+https://img.misaka-mikoto.jp/
 ```
 
 插件：Pio看板娘
@@ -49,5 +51,3 @@ https://misaka-fans-photos.github.io/
 ```
 
 但我从始至终没有收过一分钱，建站全是出于对御坂美琴这个角色的喜爱！（GitHub pages 自动续签 ssl 证书，也不存在域名过期，这让我很生气。如果无法访问，请使用镜像。有了解这方面的朋友可以教教我。）
-
-GitHub 访问：可将 DNS 设置为 1.2.4.8 加速
