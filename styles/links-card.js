@@ -8,8 +8,8 @@ export default class ContributorCard extends HTMLElement {
   get username() {
     return this.getAttribute("username");
   }
-  get name() {
-    return this.getAttribute("name");
+  get desc() {
+    return this.getAttribute("desc");
   }
   get link() {
     return this.getAttribute("link");
@@ -25,7 +25,7 @@ export default class ContributorCard extends HTMLElement {
       <style>${this.renderStyle()}</style>
       <div class="headline">
         <div class="info">
-        <span class="name">${this.name}</span>
+        <span class="name">${this.desc}</span>
             <?xml version="1.0" encoding="utf-8"?>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
               <g>
@@ -58,12 +58,6 @@ export default class ContributorCard extends HTMLElement {
       .headline {
         display: flex;
         margin-top: 16px;
-      }
-      .avatar img {
-        margin-left: 16px;
-        width: 50px;
-        height: 50px;
-        border-radius: 16px;
       }
       .info {
         margin-left: 16px;
