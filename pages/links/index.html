@@ -16,7 +16,7 @@
     />
     <title>友情链接</title>
     <link rel="stylesheet" href="../../styles/main.css" />
-    <link rel="stylesheet" href="../../styles/friends.css" />
+    <link rel="stylesheet" href="../../scripts/links-card.js" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -30,14 +30,16 @@
     </header>
     <button class="fab back-to-top material-symbols-outlined">straight</button>
     <div class="container">
-      <div class="page-friends">
-        <ul class="readers-list clearfix">
-          <li class="animated" style="visibility: visible;">
-            <a rel="project" title="ToaruNet Project" target="_blank" href="https://toarunet.com"><div>ToaruNet</div><div>某系列作品粉丝网站,由星之相位运营</div></a><br>
-            <a rel="colleague" title="mashiro blog" target="_blank" href="https://mashiro.pub"><div>Mashiro的博客</div><div>Happy Coding , Happy Life</div></a>
-          </li>
-        </ul>
-      </div>
+        <links-card
+          desc="魔禁粉丝网站"
+          link="https://toarunet.com"
+          >魔禁粉丝网站，由星之相位负责运营</links-card
+        >
+        <links-card
+          desc="Mashiro的博客"
+          link="https://mashiro.top"
+          >Happy coding & Happy life</links-card
+        >
     </div>
     <footer>
       <embed src="../../styles/footer.html" />
