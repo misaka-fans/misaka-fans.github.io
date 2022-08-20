@@ -1,7 +1,7 @@
 /**
  * @author: shbwb(抄的，还没抄完（bushi
  */
-export default class ContributorCard extends HTMLElement {
+export default class LinksCard extends HTMLElement {
   static get is() {
     return "links-card";
   }
@@ -34,8 +34,7 @@ export default class ContributorCard extends HTMLElement {
                 <path d="M731.2,557.7c-12-13.4-26.2-20-42.7-20c-16.5,0-30.7,6.7-42.7,20c-12,13.3-20.4,28.3-25.3,44.7c-4.9,16.5-7.4,32.6-7.4,48.3c0,15.7,2.5,31.8,7.4,48.3c4.9,16.5,13.3,31.4,25.3,44.7c12,13.4,26.2,20,42.7,20c16.5,0,30.7-6.7,42.7-20c12-13.3,20.4-28.3,25.3-44.7c4.9-16.5,7.4-32.6,7.4-48.3s-2.5-31.8-7.4-48.3C751.6,586,743.1,571.1,731.2,557.7z" />
               </g>
             </svg>
-          </a>
-          <a class="link" href="${this.link}">
+          <a class="link" href="${this.link}"></a>
         </div>
       </div>
       <hr />
@@ -86,4 +85,4 @@ export default class ContributorCard extends HTMLElement {
   }
 }
 
-customElements.define(ContributorCard.is, ContributorCard);
+customElements.define(LinksCard.is, LinksCard);
