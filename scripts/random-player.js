@@ -9,7 +9,7 @@ export default class RandomPlayer extends HTMLElement {
     return ['28012031', '26379178', '1831600483'];
   }
   get randomMusicId() {
-    return this.ids[Math.floor(Math.random() * (this.ids.length + 1))];
+    return this.ids[Math.floor(Math.random() * this.ids.length)];
   }
   constructor() {
     super();
