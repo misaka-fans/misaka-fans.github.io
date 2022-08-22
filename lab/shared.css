@@ -30,6 +30,8 @@ a:not(:hover) {
 }
 
 img {
+  margin-top: 16px;
+  max-width: calc(100% - 64px);
   max-height: 200px;
 }
 
