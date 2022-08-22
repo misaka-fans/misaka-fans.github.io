@@ -2,8 +2,7 @@
 <!DOCTYPE html>
 
 <html>
-
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="manifest" href="/pwa/manifest.json" />
@@ -13,31 +12,39 @@
     <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
     <link rel="stylesheet" href="../../styles/main.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <a href="../../" class="icon-btn material-symbols-outlined">arrow_back</a>
-        <h1>留言板</h1>
+      <a href="../../" class="icon-btn material-symbols-outlined">arrow_back</a>
+      <h1>留言板</h1>
     </header>
 
-    <link href="https://unpkg.com/artalk@2.3.4/dist/Artalk.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link href="https://unpkg.com/artalk@2.3.4/dist/Artalk.css" rel="stylesheet" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
     <script src="https://unpkg.com/artalk@2.3.4/dist/Artalk.js"></script>
     <!-- Artalk -->
     <div id="Comments"></div>
     <script>
-        new Artalk({
-            el: '#Comments',
-            pageKey: '233',
-            pageTitle: 'misaka-mikoto.jp-comment-server',
-            server: 'https://chat.mashiro.pub:23366',
-            site: 'lolimashiro-comment-sys',
-            emoticons: ["https://emotion-new.acs.pw/aru/artalk.json", "https://emotion-new.acs.pw/heo/artalk.json", "https://emotion-new.acs.pw/bili_tv/artalk.json"]
-        })
+      new Artalk({
+        el: '#Comments',
+        pageKey: '233',
+        pageTitle: 'misaka-mikoto.jp-comment-server',
+        server: 'https://chat.mashiro.pub:23366',
+        site: 'lolimashiro-comment-sys',
+        emoticons: [
+          'https://emotion-new.acs.pw/aru/artalk.json',
+          'https://emotion-new.acs.pw/heo/artalk.json',
+          'https://emotion-new.acs.pw/bili_tv/artalk.json',
+        ],
+      });
     </script>
-
-</body>
-
+  </body>
 </html>

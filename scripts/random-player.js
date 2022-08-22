@@ -3,7 +3,7 @@
  */
 export default class RandomPlayer extends HTMLElement {
   static get is() {
-    return "random-player";
+    return 'random-player';
   }
   get ids() {
     return ['28012031', '26379178', '1831600483'];
@@ -13,7 +13,7 @@ export default class RandomPlayer extends HTMLElement {
   }
   constructor() {
     super();
-    this.attachShadow({ mode: "open" });
+    this.attachShadow({ mode: 'open' });
     this.render();
   }
   render() {

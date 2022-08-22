@@ -3,15 +3,15 @@
  */
 export default class DelText extends HTMLElement {
   static get is() {
-    return "del-text";
+    return 'del-text';
   }
   constructor() {
     super();
-    this.attachShadow({ mode: "open" });
+    this.attachShadow({ mode: 'open' });
     this.render();
   }
   connectedCallback() {
-    this.title = "你知道的太多了";
+    this.title = '你知道的太多了';
   }
   render() {
     if (!this.shadowRoot) return;

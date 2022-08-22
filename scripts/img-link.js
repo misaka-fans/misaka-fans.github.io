@@ -3,31 +3,27 @@
  */
 export default class ImgLink extends HTMLElement {
   static get is() {
-    return "img-a";
+    return 'img-a';
   }
   get url() {
-    return this.getAttribute("url");
+    return this.getAttribute('url');
   }
   get text() {
-    return this.getAttribute("text");
+    return this.getAttribute('text');
   }
   get prefixUrl() {
-    return (
-      this.parentNode.getAttribute("prefix-url") ||
-      "https://img.misaka-mikoto.jp/pic/"
-    );
+    return this.parentNode.getAttribute('prefix-url') || 'https://img.misaka-mikoto.jp/pic/';
   }
   constructor() {
     super();
-    this.attachShadow({ mode: "open" });
+    this.attachShadow({ mode: 'open' });
     this.render();
   }
   render() {
     if (!this.shadowRoot) return;
     this.shadowRoot.innerHTML = `
       <style>${this.renderStyle()}</style>
-      <a href="${this.prefixUrl + this.url}" title="${this.text
-      }" target="_blank">
+      <a href="${this.prefixUrl + this.url}" title="${this.text}" target="_blank">
         <img src="${this.prefixUrl + this.url}" alt="${this.text}" />
       </a>
     `;

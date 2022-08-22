@@ -1,10 +1,10 @@
-@import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.6.0/lxgwwenkai-regular.css");
-@import url("https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap");
+@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.6.0/lxgwwenkai-regular.css');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
 
 *,
 ::after,
 ::before {
-  font-family: "LXGW WenKai", cursive, sans-serif;
+  font-family: 'LXGW WenKai', cursive, sans-serif;
   box-sizing: border-box !important;
 }
 
@@ -79,7 +79,7 @@
   opacity: 1 !important;
 }
 .atk-main-editor > .atk-bottom .atk-send-btn::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   border-radius: inherit;
@@ -251,13 +251,7 @@ hr {
   margin: 36px 0 12px 0;
   height: 4px;
   border: 0;
-  background: repeating-linear-gradient(
-    135deg,
-    #a2a9b6 0px,
-    #a2a9b6 1px,
-    transparent 1px,
-    transparent 6px
-  );
+  background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);
 }
 
 .dotted-line {
@@ -310,7 +304,7 @@ hr {
 .icon-btn::before,
 .fab::before,
 .sidebar a::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background-color: currentColor;
@@ -436,11 +430,11 @@ footer embed {
 }
 
 @media screen and (min-width: 60em) {
-  [dir="ltr"] .md-header__source {
+  [dir='ltr'] .md-header__source {
     margin-left: 1rem;
   }
 
-  [dir="rtl"] .md-header__source {
+  [dir='rtl'] .md-header__source {
     margin-right: 1rem;
   }
 
@@ -450,11 +444,11 @@ footer embed {
 }
 
 @media screen and (min-width: 76.25em) {
-  [dir="ltr"] .md-header__source {
+  [dir='ltr'] .md-header__source {
     margin-left: 1.4rem;
   }
 
-  [dir="rtl"] .md-header__source {
+  [dir='rtl'] .md-header__source {
     margin-right: 1.4rem;
   }
 }
@@ -480,11 +474,11 @@ footer embed {
 }
 
 @media screen and (min-width: 60em) {
-  [dir="ltr"] .md-header__source {
+  [dir='ltr'] .md-header__source {
     margin-left: 1rem;
   }
 
-  [dir="rtl"] .md-header__source {
+  [dir='rtl'] .md-header__source {
     margin-right: 1rem;
   }
 
@@ -494,11 +488,11 @@ footer embed {
 }
 
 @media screen and (min-width: 76.25em) {
-  [dir="ltr"] .md-header__source {
+  [dir='ltr'] .md-header__source {
     margin-left: 1.4rem;
   }
 
-  [dir="rtl"] .md-header__source {
+  [dir='rtl'] .md-header__source {
     margin-right: 1.4rem;
   }
 }
@@ -525,11 +519,11 @@ footer embed {
   width: 38px;
 }
 
-[dir="ltr"] .md-source__icon svg {
+[dir='ltr'] .md-source__icon svg {
   margin-left: 0.6rem;
 }
 
-[dir="rtl"] .md-source__icon svg {
+[dir='rtl'] .md-source__icon svg {
   margin-right: 0.6rem;
 }
 
@@ -537,27 +531,27 @@ footer embed {
   margin-top: 0.6rem;
 }
 
-[dir="ltr"] .md-source__icon + .md-source__repository {
+[dir='ltr'] .md-source__icon + .md-source__repository {
   margin-left: -2rem;
 }
 
-[dir="rtl"] .md-source__icon + .md-source__repository {
+[dir='rtl'] .md-source__icon + .md-source__repository {
   margin-right: -2rem;
 }
 
-[dir="ltr"] .md-source__icon + .md-source__repository {
+[dir='ltr'] .md-source__icon + .md-source__repository {
   padding-left: 2rem;
 }
 
-[dir="rtl"] .md-source__icon + .md-source__repository {
+[dir='rtl'] .md-source__icon + .md-source__repository {
   padding-right: 2rem;
 }
 
-[dir="ltr"] .md-source__repository {
+[dir='ltr'] .md-source__repository {
   margin-left: 0.6rem;
 }
 
-[dir="rtl"] .md-source__repository {
+[dir='rtl'] .md-source__repository {
   margin-right: 0.6rem;
 }
 
@@ -592,17 +586,17 @@ footer embed {
   animation: fact 0.4s ease-out;
 }
 
-[dir="ltr"] .md-source__fact:before {
+[dir='ltr'] .md-source__fact:before {
   margin-right: 0.1rem;
 }
 
-[dir="rtl"] .md-source__fact:before {
+[dir='rtl'] .md-source__fact:before {
   margin-left: 0.1rem;
 }
 
 .md-source__fact:before {
   background-color: currentcolor;
-  content: "";
+  content: '';
   display: inline-block;
   height: 0.6rem;
   -webkit-mask-repeat: no-repeat;
@@ -613,11 +607,11 @@ footer embed {
   width: 0.6rem;
 }
 
-[dir="ltr"] .md-source__fact:nth-child(1n + 2):before {
+[dir='ltr'] .md-source__fact:nth-child(1n + 2):before {
   margin-left: 0.4rem;
 }
 
-[dir="rtl"] .md-source__fact:nth-child(1n + 2):before {
+[dir='rtl'] .md-source__fact:nth-child(1n + 2):before {
   margin-right: 0.4rem;
 }
 

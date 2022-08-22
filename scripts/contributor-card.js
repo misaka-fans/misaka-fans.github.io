@@ -3,26 +3,23 @@
  */
 export default class ContributorCard extends HTMLElement {
   static get is() {
-    return "con-card";
+    return 'con-card';
   }
   get avatar() {
-    return (
-      this.getAttribute("avatar") ||
-      `https://avatars.githubusercontent.com/${this.username}?s=200&v=4`
-    );
+    return this.getAttribute('avatar') || `https://avatars.githubusercontent.com/${this.username}?s=200&v=4`;
   }
   get username() {
-    return this.getAttribute("username");
+    return this.getAttribute('username');
   }
   get name() {
-    return this.getAttribute("name");
+    return this.getAttribute('name');
   }
   get email() {
-    return this.getAttribute("email");
+    return this.getAttribute('email');
   }
   constructor() {
     super();
-    this.attachShadow({ mode: "open" });
+    this.attachShadow({ mode: 'open' });
     this.render();
   }
   render() {
