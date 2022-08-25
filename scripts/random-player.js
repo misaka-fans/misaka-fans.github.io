@@ -6,7 +6,7 @@ export default class RandomPlayer extends HTMLElement {
     return 'random-player';
   }
   get ids() {
-    return ['28012031', '26379178', '1831600483'];
+    return ['28012031', '26379178', '1831600483', '27528656', '1833118660'];
   }
   get randomMusicId() {
     return this.ids[Math.floor(Math.random() * this.ids.length)];
