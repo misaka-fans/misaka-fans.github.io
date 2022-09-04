@@ -31,7 +31,7 @@ export default class DelText extends HTMLElement {
       }
       :host(:hover) {
         background-color: transparent;
-        transition-delay: 700ms; /* appear with tooltip */
+        transition-delay: 350ms; /* appear with tooltip */
       }
     `;
   }
