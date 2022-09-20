@@ -387,6 +387,10 @@ hr {
   overflow: hidden;
 }
 
+.sidebar a:hover {
+  background: #D8D8D8;
+}
+
 .banner {
   min-height: 64px;
   display: flex;
