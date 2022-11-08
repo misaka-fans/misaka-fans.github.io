@@ -12,7 +12,7 @@ export default class ImgLink extends HTMLElement {
     return this.getAttribute('text');
   }
   get prefixUrl() {
-    return this.parentNode.getAttribute('prefix-url') || 'https://misaka-fans-photos.netlify.app/pic/';
+    return this.parentNode.getAttribute('prefix-url') || 'https://misaka-mikoto.jp/pic/';
   }
   constructor() {
     super();
