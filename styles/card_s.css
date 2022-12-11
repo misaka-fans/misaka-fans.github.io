@@ -48,12 +48,12 @@
 .container #card .content{
     padding: 20px;
     text-align: center;
-    transform: translateY(100px);
+    transform: translateY(90px);
     opacity: 1; 
     transition: 0.5s;
 }
  .container #card:hover .content{
-    transform: translateY(0px);
+    transform: translateY(15px);
     opacity: 1;
 } 
 .container #card .content h2{
@@ -65,11 +65,13 @@
     pointer-events: none;
 }
 .container #card .content h3{
+    -webkit-text-stroke: 0.5px black; 
     font-size: 1.8em;
     color: #fff;
     z-index: 1;
 }
 .container #card .content p{
+    -webkit-text-stroke: 0.1px black; 
     font-size: 1em;
     color: #fff;
     font-weight: 300;
