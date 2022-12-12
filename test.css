@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.div{
+    width: 1519px;
+    height: 512px;
+    /* 居中 */
+    margin: 0px auto;
+    /* 用于隐藏超出展示容器的部分内容 */
+    overflow: hidden;
+    border: 1px solid black;
+}
+ul{
+    width: 9595px;
+    height: 512px;
+    
+    animation: switch 5s infinite linear;
+}
+ul li{
+    list-style: none;
+    float: left;
+}
+ul li img{
+    width: 1519px;
+    height: 512px;
+}
+@keyframes switch{
+    0%,21%{
+        margin-left: 0px;
+    }
+    26%,47%{
+        margin-left: -1519px;
+    }
+    52%,73%{
+        margin-left: -3038px;
+    }
+    78%,100%{
+        margin-left: -4557px;
+    }
+}
+/* 鼠标滑过图片停止滚动 */
+div:hover ul{
+    animation-play-state: paused;
+}
