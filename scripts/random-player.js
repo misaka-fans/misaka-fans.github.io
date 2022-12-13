@@ -18,8 +18,7 @@ export default class RandomPlayer extends HTMLElement {
   }
   render() {
     if (!this.shadowRoot) return;
-    if(this.getCookie("onmusic")!="null")
-    {
+
       this.shadowRoot.innerHTML = `
       <style>${this.renderStyle()}</style>
       <iframe style="border:0"
@@ -28,7 +27,6 @@ export default class RandomPlayer extends HTMLElement {
       ></iframe>
 
     `;
-    }
 
   }
   SetCookie(name,value){

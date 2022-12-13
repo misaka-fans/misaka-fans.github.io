@@ -1,5 +1,4 @@
 button=document.getElementById("onmusicsbutton");
-
 if(getCookie("onmusic")=="null")
 {
   button.innerText="volume_off"
@@ -25,6 +24,14 @@ onmusic = function ()
     var RP=document.createElement("random-player")
     RP.id="rps";
     muss.appendChild(RP);
+  }
+}
+function flashx()
+{
+  if(this.getCookie("onmusic")=="null")
+  {
+    var rp=document.getElementById("rps");
+    rp.parentNode.removeChild(rp);
   }
 }
 function SetCookie(name,value){
