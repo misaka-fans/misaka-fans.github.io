@@ -27,11 +27,13 @@
   <link rel="prefetch" href="https://github.io" />
   <link rel="prefetch" href="https://music.163.com" />
   <script type="module" src="./scripts/random-player.js"></script>
+
 </head>
 
-<body dir="ltr">
+<body dir="ltr" style="mix-blend-mode: soft-light;background-color: rgba(241,232,218,0.3);">
   <header class="header">
     <button class="sidebar-toggler icon-btn material-symbols-outlined">menu</button>
+    <button class="sidebar-toggler icon-btn material-symbols-outlined" onclick="onmusic()" id="onmusicsbutton">volume_up</button>
     <h1>爱我超电磁炮</h1>
     <!--githubmodule-->
     <div style="width: 40%">
@@ -48,14 +50,15 @@
           <div class="md-source__repository md-source__repository--active" style="width: 150%" ;>
             misaka-fans.github.io
             <ul class="md-source__facts">
-              <li class="md-source__fact md-source__fact--stars">42</li>
-              <li class="md-source__fact md-source__fact--forks">11</li>
+              <li class="md-source__fact md-source__fact--stars" id="stars">42</li>
+              <li class="md-source__fact md-source__fact--forks" id="forks">11</li>
             </ul>
           </div>
         </a>
       </div>
       <!--/githubmodule/-->
     </div>
+    <script src="scripts/github.js">setstar()</script>
   </header>
   <section class="banner">
     <p style="font-size: 120%; font-family: 'Yuji Mai'">
@@ -85,7 +88,18 @@
     <a href="./pages/links/">友情链接</a>
   </aside>
   <main class="container">
-    <random-player></random-player>
+    <script src="scripts/onmusics.js"></script>
+    <!--<div id="mus">
+      <div id="menu" style="position: absolute;
+            top: -500px;border: #000000 1px solid;background-color: #ffffff;border-radius: 5px">
+        <div onclick="onmusic();">开关音乐</div>
+      </div>
+
+
+    </div>
+-->
+    <div id="musc"><random-player id="rps"></random-player></div>
+    <script>flashx()</script>
     <hr />
     <h3>Hi，朋友，你好！</h3>
     <p>如果你还不了解御坂美琴的话，这个页面可能会帮到你！欢迎访问导航栏中的“关于电磁炮”栏目详细了解御坂美琴。</p>
