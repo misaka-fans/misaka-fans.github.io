@@ -1,5 +1,5 @@
 
-.container {
+.containerbox {
     position: relative;
     display: flex;
     /* flex容器（flex container） */
@@ -14,25 +14,45 @@
 
 }
 
-.container .card {
 
+
+.containerbox .card {
     width: 280px;
     height: 400px;
     margin: 30px;
     /* 设置阴影 */
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
+    border-radius: 2px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-
+}
+.containerbox .card:before {
+    background: -webkit-linear-gradient(0deg, #7FEFBD 0%, #FFF689 50%, #EC0B43 100%);
+    background: linear-gradient(90deg, #7FEFBD 0%, #FFF689 50%, #EC0B43 100%);
+    content: '';
+    position: absolute;
+    margin: 32px;
+    width: 285px;
+    height: 405px;
+    border-radius: 4px;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    z-index: -1;
+    -webkit-transform: scale(0.99) translateY(3px);
+    transform: scale(0.99) translateY(3px);
 }
 
-.container .card::after {
-    border-radius: 15px;
+
+
+
+
+
+.containerbox .card::after {
+    border-radius: 2px;
     /* 创建伪类 */
     content: "";
     /* 内容为空 */
@@ -40,7 +60,6 @@
     /* 转为块元素 */
     width: inherit;
     height: inherit;
-    backdrop-filter: blur(0.8px);
     background: rgba(1, 1, 1, 0.15);
     /* 前三个代表颜色，最后一个代表透明度 */
 
@@ -51,10 +70,10 @@
     /* 动画过度效果 */
 }
 
-.container .card:hover:after {
+.containerbox .card:hover:after {
     /* top: 0; */
     background: rgba(1, 1, 1, 0.5);
-    backdrop-filter: blur(4px)
+    backdrop-filter: blur(1px)
     /* 当鼠标经过div的时候使after的top值为0 */
 }
 
@@ -62,24 +81,77 @@
 
 #card-1 {
     /* 设置card1的背景 */
-    background-image: url(../../image/railgun.webp);
+    background-image: url(../../image/2010isml_ruby-nl.jpg);
     background-size: cover;
 
 }
 
 #card-2 {
     /* 设置card2的背景 */
-    background: url(../../image/railgun_s.webp);
+    background: url(../../image/2011isml_aquamarine-nl.jpg);
     background-size: cover;
 }
 
 #card-3 {
-    /* 设置card2的背景 */
-    background: url(../../image/railgun_t.webp);
+    
+    background: url(../../image/2011isml_heavenly-tiara.jpg);
     background-size: cover;
 }
 
-.container .card .content {
+#card-4 {
+    
+    background: url(../../image/2012_ruby-nl.jpg);
+    background-size: cover;
+}
+
+#card-5 {
+    
+    background: url(../../image/2012isml_diamono-circlet.jpg);
+    background-size: cover;
+}
+
+#card-6 {
+    
+    background: url(../../image/2014isml_aquamarine-nl.jpg);
+    background-size: cover;
+}
+
+#card-7 {
+    
+    background: url(../../image/2017isml_tournament-champion.jpg);
+    background-size: cover;
+}
+
+#card-8 {
+    
+    background: url(../../image/2018isml_tournament-champion.jpg);
+    background-size: cover;
+}
+
+#card-9 {
+    
+    background: url(../../image/2020isml_emerald-nl.jpg);
+    background-size: cover;
+}
+
+#card-10 {
+    
+    background: url(../../image/2021isml_sapphire-nl.jpg);
+    background-size: cover;
+}
+
+#card-11 {
+    
+    background: url(../../image/2022isml_topaz-nl.jpg);
+    background-size: cover;
+}
+
+#card-12 {
+    background: rgba(174, 0, 255, 0.788) ;
+    /*background: url(../../image/);*/
+    background-size: cover;
+}
+.containerbox .card .content {
     padding: 20px;
     text-align: center;
     transform: translateY(70px);
@@ -88,12 +160,12 @@
     z-index: 2;
 }
 
-.container .card:hover .content {
+.containerbox .card:hover .content {
     transform: translateY(0px);
     opacity: 1;
 }
 
-.container .card .content h2 {
+.containerbox .card .content h2 {
     position:relative;
     top: -30px;
     z-index: 1;
@@ -102,7 +174,7 @@
     pointer-events: none;
 }
 
-.container .card .content h3 {
+.containerbox .card .content h3 {
     font-size: 1.8em;
     color: #fff;
     z-index: 1;
@@ -110,7 +182,7 @@
     top: -30px;
 }
 
-.container .card .content p {
+.containerbox .card .content p {
     font-size: 1em;
     color: #fff;
     font-weight: 300;
@@ -118,7 +190,7 @@
     top: -30px;
 }
 
-.container .card .content a {
+.containerbox .card .content a {
     position: relative;
     display: inline-block;
     padding: 8px 20px;

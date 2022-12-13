@@ -267,7 +267,8 @@ hr {
   height: 64px;
   display: flex;
   align-items: center;
-  background-color: var(--theme-color);
+  backdrop-filter: blur(1.5px);
+  background-color: rgba(196, 149, 130,0.7);
   color: var(--on-theme-color);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   z-index: 8;
@@ -293,13 +294,15 @@ hr {
   width: 48px;
   height: 48px;
   color: var(--on-theme-color);
-  background-color: var(--theme-color);
+  background-color: rgba(202, 139, 103,0);
+
   border-radius: 9999px;
   border: none;
   user-select: none;
   cursor: pointer;
   overflow: hidden;
 }
+
 
 .icon-btn::before,
 .fab::before,
