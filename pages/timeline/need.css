@@ -13,8 +13,8 @@ html * {
 
 body {
     font-size: 100%;
-    color: #7f8c97;
-    background-color: #e9f0f5;
+    color: #000;
+    background-color: #ffffff;
 }
 
 img {
@@ -129,7 +129,7 @@ img {
 .timeline-content {
     position: relative;
     margin-left: 60px;
-    background: white;
+    background: #fcece5;
     border-radius: 0.25em;
     padding: 1em;
     box-shadow: 0 3px 0 #d7e4ed;
