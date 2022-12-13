@@ -124,13 +124,6 @@ img {
     .cssanimations .timeline-round.is-hidden {
         visibility: hidden;
     }
-
-    .cssanimations .timeline-round.bounce-in {
-        visibility: visible;
-        -webkit-animation: cd-bounce-1 0.6s;
-        -moz-animation: cd-bounce-1 0.6s;
-        animation: cd-bounce-1 0.6s;
-    }
 }
 
 .timeline-content {
