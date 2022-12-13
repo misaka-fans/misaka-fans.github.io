@@ -1,17 +1,3 @@
-h2.top_title {
-    border-bottom: none;
-    background: none;
-    text-align: center;
-    line-height: 32px;
-    font-size: 20px;
-}
-
-h2.top_title span {
-    font-size: 12px;
-    color: #666;
-    font-weight: 500;
-}
-
 html * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -27,39 +13,36 @@ html * {
 
 body {
     font-size: 100%;
-    color: #7f8c97;
-    background-color: #e9f0f5;
+    color: #000;
+    background-color: #ffffff;
 }
 
 img {
     max-width: 100%;
 }
 
-/* --------------------------------Modules - reusable parts of our design-------------------------------- */
 .cd-container {
-    /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+    /* 这个类的作用是给元素设定最大宽度，当元素达到这个最大宽度时，让元素水平居中 */
     width: 90%;
     max-width: 1170px;
     margin: 0 auto;
 }
 
 .cd-container::after {
-    /* clearfix */
     content: "";
     display: table;
     clear: both;
 }
 
-/* --------------------------------Main components-------------------------------- */
-#cd-timeline {
+#timeline {
     position: relative;
     padding: 2em 0;
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
-#cd-timeline::before {
-    /* this is the vertical line */
+#timeline::before {
+    /* 垂直线 */
     content: "";
     position: absolute;
     top: 0;
@@ -70,51 +53,51 @@ img {
 }
 
 @media only screen and (min-width: 1170px) {
-    #cd-timeline {
+    #timeline {
         margin-top: 3em;
         margin-bottom: 3em;
     }
 
-    #cd-timeline::before {
+    #timeline::before {
         left: 50%;
         margin-left: -2px;
     }
 }
 
-.cd-timeline-block {
+.timeline-block {
     position: relative;
     margin: 2em 0;
 }
 
-.cd-timeline-block:after {
+.timeline-block:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.cd-timeline-block:first-child {
+.timeline-block:first-child {
     margin-top: 0;
 }
 
-.cd-timeline-block:last-child {
+.timeline-block:last-child {
     margin-bottom: 0;
 }
 
 @media only screen and (min-width: 1170px) {
-    .cd-timeline-block {
+    .timeline-block {
         margin: 4em 0;
     }
 
-    .cd-timeline-block:first-child {
+    .timeline-block:first-child {
         margin-top: 0;
     }
 
-    .cd-timeline-block:last-child {
+    .timeline-block:last-child {
         margin-bottom: 0;
     }
 }
 
-.cd-timeline-img {
+.timeline-round {
     position: absolute;
     top: 0;
     left: 0;
@@ -125,97 +108,72 @@ img {
         0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
-.cd-timeline-img {
+.timeline-round {
     background-color: #c49582;
 }
 
 
 @media only screen and (min-width: 1170px) {
-    .cd-timeline-img {
+    .timeline-round {
         width: 60px;
         height: 60px;
         left: 50%;
         margin-left: -30px;
-        /* Force Hardware Acceleration in WebKit */
-        -webkit-transform: translateZ(0);
-        -webkit-backface-visibility: hidden;
     }
 
-    .cssanimations .cd-timeline-img.is-hidden {
+    .cssanimations .timeline-round.is-hidden {
         visibility: hidden;
-    }
-
-    .cssanimations .cd-timeline-img.bounce-in {
-        visibility: visible;
-        -webkit-animation: cd-bounce-1 0.6s;
-        -moz-animation: cd-bounce-1 0.6s;
-        animation: cd-bounce-1 0.6s;
     }
 }
 
-.cd-timeline-content {
+.timeline-content {
     position: relative;
     margin-left: 60px;
-    background: white;
+    background: #fcece5;
     border-radius: 0.25em;
     padding: 1em;
     box-shadow: 0 3px 0 #d7e4ed;
 }
 
-.cd-timeline-content:after {
+.timeline-content:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.cd-timeline-content h2 {
+.timeline-content h2 {
     color: #303e49;
 }
 
-.cd-timeline-content p {
+.timeline-content p {
     font-size: medium;
 }
 
-.cd-timeline-content .cd-read-more,
-.cd-timeline-content .cd-date {
+.timeline-content .cd-date {
     font-size: 13px;
     font-size: 0.8125rem;
 }
 
-.cd-timeline-content .cd-read-more,
-.cd-timeline-content .cd-date {
+.timeline-content .cd-date {
     display: inline-block;
 }
 
-.cd-timeline-content p {
+.timeline-content p {
     margin: 1em 0;
     line-height: 1.6;
 }
 
-.cd-timeline-content .cd-read-more {
-    float: right;
-    padding: 0.8em 1em;
-    background: #acb7c0;
-    color: white;
-    border-radius: 0.25em;
-}
-
-.no-touch .cd-timeline-content .cd-read-more:hover {
+.no-touch .timeline-content .cd-read-more:hover {
     background-color: #bac4cb;
 }
 
-a.cd-read-more:hover {
-    text-decoration: none;
-    background-color: #424242;
-}
-
-.cd-timeline-content .cd-date {
+.timeline-content .cd-date {
     float: left;
     padding: 0.8em 0;
     opacity: 0.7;
 }
 
-.cd-timeline-content::before {
+.timeline-content::before {
     content: "";
     position: absolute;
     top: 16px;
@@ -227,42 +185,37 @@ a.cd-read-more:hover {
 }
 
 @media only screen and (min-width: 768px) {
-    .cd-timeline-content h2 {
+    .timeline-content h2 {
         font-size: 20px;
         font-size: 1.25rem;
     }
 
-    .cd-timeline-content p {
+    .timeline-content p {
         font-size: 16px;
         font-size: 1rem;
     }
 
-    .cd-timeline-content .cd-read-more,
-    .cd-timeline-content .cd-date {
+    .timeline-content .cd-date {
         font-size: 14px;
         font-size: 0.875rem;
     }
 }
 
 @media only screen and (min-width: 1170px) {
-    .cd-timeline-content {
+    .timeline-content {
         margin-left: 0;
         padding: 1.6em;
         width: 45%;
     }
 
-    .cd-timeline-content::before {
+    .timeline-content::before {
         top: 24px;
         left: 100%;
         border-color: transparent;
         border-left-color: white;
     }
 
-    .cd-timeline-content .cd-read-more {
-        float: left;
-    }
-
-    .cd-timeline-content .cd-date {
+    .timeline-content .cd-date {
         position: absolute;
         width: 100%;
         left: 122%;
@@ -271,11 +224,11 @@ a.cd-read-more:hover {
         font-size: 1rem;
     }
 
-    .cd-timeline-block:nth-child(even) .cd-timeline-content {
+    .timeline-block:nth-child(even) .timeline-content {
         float: right;
     }
 
-    .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+    .timeline-block:nth-child(even) .timeline-content::before {
         top: 24px;
         left: auto;
         right: 100%;
@@ -283,34 +236,19 @@ a.cd-read-more:hover {
         border-right-color: white;
     }
 
-    .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
+    .timeline-block:nth-child(even) .timeline-content .cd-read-more {
         float: right;
     }
 
-    .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+    .timeline-block:nth-child(even) .timeline-content .cd-date {
         left: auto;
         right: 122%;
         text-align: right;
     }
 
-    .cssanimations .cd-timeline-content.is-hidden {
+    .cssanimations .timeline-content.is-hidden {
         visibility: hidden;
     }
 
-    .cssanimations .cd-timeline-content.bounce-in {
-        visibility: visible;
-        -webkit-animation: cd-bounce-2 0.6s;
-        -moz-animation: cd-bounce-2 0.6s;
-        animation: cd-bounce-2 0.6s;
-    }
-}
 
-@media only screen and (min-width: 1170px) {
-
-    /* inverse bounce effect on even content blocks */
-    .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
-        -webkit-animation: cd-bounce-2-inverse 0.6s;
-        -moz-animation: cd-bounce-2-inverse 0.6s;
-        animation: cd-bounce-2-inverse 0.6s;
-    }
 }
