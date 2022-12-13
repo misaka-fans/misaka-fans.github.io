@@ -1,24 +1,30 @@
+button=document.getElementById("onmusicsbutton");
 
-window.oncontextmenu=function(e){
-  e.preventDefault();
-  menu=document.getElementById('menu');
-  menu.style.left=e.clientX+'px';
-  menu.style.top=e.clientY+'px';
-  window.onclick=function(e){
-    document.getElementById('menu').style.top= -500 + 'px';
-  }
+if(getCookie("onmusic")=="null")
+{
+  button.innerText="volume_off"
+}
+else
+{
+  button.innerText="volume_up"
 }
 onmusic = function ()
 {
+  var muss=document.getElementById("musc");
   if(this.getCookie("onmusic")!="null")
   {
     this.SetCookie("onmusic","null");
-    var dom=document.getElementById("musc");
-    dom.parentNode.removeChild(dom);
+    button.innerText="volume_off";
+    var rp=document.getElementById("rps");
+    rp.parentNode.removeChild(rp);
   }
   else
   {
     this.SetCookie("onmusic","true");
+    button.innerText="volume_up"
+    var RP=document.createElement("random-player")
+    RP.id="rps";
+    muss.appendChild(RP);
   }
 }
 function SetCookie(name,value){

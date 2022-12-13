@@ -33,6 +33,7 @@
 <body dir="ltr" style="mix-blend-mode: soft-light;background-color: rgba(241,232,218,0.3);">
   <header class="header">
     <button class="sidebar-toggler icon-btn material-symbols-outlined">menu</button>
+    <button class="sidebar-toggler icon-btn material-symbols-outlined" onclick="onmusic()" id="onmusicsbutton">volume_up</button>
     <h1>爱我超电磁炮</h1>
     <!--githubmodule-->
     <div style="width: 40%">
@@ -87,16 +88,16 @@
   </aside>
   <main class="container">
     <script src="scripts/onmusics.js"></script>
-    <div id="mus">
+    <!--<div id="mus">
       <div id="menu" style="position: absolute;
             top: -500px;border: #000000 1px solid;background-color: #ffffff;border-radius: 5px">
         <div onclick="onmusic();">开关音乐</div>
       </div>
-      <div id="musc"><random-player></random-player></div>
+
 
     </div>
-
-
+-->
+    <div id="musc"><random-player id="rps"></random-player></div>
     <hr />
     <h3>Hi，朋友，你好！</h3>
     <p>如果你还不了解御坂美琴的话，这个页面可能会帮到你！欢迎访问导航栏中的“关于电磁炮”栏目详细了解御坂美琴。</p>

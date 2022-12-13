@@ -50,5 +50,20 @@ export default class RandomPlayer extends HTMLElement {
     `;
   }
 }
+function flush()
+{
+  if (!this.shadowRoot) return;
+  if(this.getCookie("onmusic")!="null")
+  {
+    this.shadowRoot.innerHTML = `
+      <style>${this.renderStyle()}</style>
+      <iframe style="border:0"
+        width="100%" height="86"
+        src="https://music.163.com/outchain/player?type=2&id=${this.randomMusicId}&auto=1&height=66" id="musics"
+      ></iframe>
 
+    `;
+  }
+
+}
 customElements.define(RandomPlayer.is, RandomPlayer);
