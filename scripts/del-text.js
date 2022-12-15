@@ -28,6 +28,7 @@ export default class DelText extends HTMLElement {
         transition: 120ms background-color;
         transition-delay: 0s;
         cursor: default;
+        border-radius:5px;
       }
       :host(:hover) {
         background-color: transparent;
