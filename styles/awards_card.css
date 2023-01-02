@@ -147,8 +147,7 @@
 }
 
 #card-12 {
-    background: rgba(174, 0, 255, 0.788) ;
-    /*background: url(../../image/);*/
+    background: url(../../image/2022isml_amethyst-nl.jpg);
     background-size: cover;
 }
 .containerbox .card .content {
