@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://misaka-static.netlify.app"
+  to = "https://misaka-fans.space"
+  status = 301
+  force = true
