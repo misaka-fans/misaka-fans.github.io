@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4d7f348e-369d-4c8e-b646-293ae9b762cb/deploy-status)](https://app.netlify.com/sites/misaka-static/deploys)
+[![.space 网站状态](https://img.shields.io/website?down_color=f38ba8&label=misaka-fans.space&up_color=a6e3a1&url=https%3A%2F%2Fmisaka-fans.space)](https://misaka-fans.space)
+
 # Misaka Mikoto
 
 你指尖跃动的电光，是我此生不变的信仰！
