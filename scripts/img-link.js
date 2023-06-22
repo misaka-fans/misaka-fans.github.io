@@ -12,7 +12,7 @@ export default class ImgLink extends HTMLElement {
     return this.getAttribute('text');
   }
   get prefixUrl() {
-    return this.parentNode.getAttribute('prefix-url') || 'https://img.moeu.moe/';
+    return this.parentNode.getAttribute('prefix-url') || 'https://img.moeu.moe/pic/';
   }
   constructor() {
     super();
