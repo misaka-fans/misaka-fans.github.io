@@ -14,43 +14,49 @@
 <url>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
-  <loc>https://misaka-fans.space/about</loc>
+  <loc>https://misaka-fans.space/pages/about</loc>
   <lastmod>2023-04-29T03:05:14+00:00</lastmod>
 </url>
 <url>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
-  <loc>https://misaka-fans.space/aboutrailgun</loc>
+  <loc>https://misaka-fans.space/pages/about-railgun</loc>
   <lastmod>2023-04-29T03:05:14+00:00</lastmod>
 </url>
 <url>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
-  <loc>https://misaka-fans.space/imgboard</loc>
+  <loc>https://misaka-fans.space/pages/photos</loc>
   <lastmod>2023-04-29T03:05:14+00:00</lastmod>
 </url>
 <url>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
-  <loc>https://misaka-fans.space/awards</loc>
+  <loc>https://misaka-fans.space/pages/awards</loc>
   <lastmod>2023-04-29T03:05:14+00:00</lastmod>
 </url>
 <url>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
-  <loc>https://misaka-fans.space/discuss</loc>
+  <loc>https://misaka-fans.space/pages/discuss</loc>
   <lastmod>2023-04-29T03:05:14+00:00</lastmod>
 </url>
 <url>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
-  <loc>https://misaka-fans.space/resource</loc>
+  <loc>https://misaka-fans.space/pages/resource</loc>
   <lastmod>2023-04-29T03:05:14+00:00</lastmod>
 </url>
 <url>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
-  <loc>https://misaka-fans.space/links</loc>
+  <loc>https://misaka-fans.space/pages/links</loc>
+  <lastmod>2023-04-29T03:05:14+00:00</lastmod>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+  <loc>https://misaka-fans.space/pages/timeline</loc>
   <lastmod>2023-04-29T03:05:14+00:00</lastmod>
 </url>
 
