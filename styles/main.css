@@ -164,6 +164,8 @@ body:not(.no-top-padding) {
 
 .sidebar-opened {
   padding-left: 300px;
+  translation: 1s;
+  -webkit-translation: 1s;
 }
 
 ul,
