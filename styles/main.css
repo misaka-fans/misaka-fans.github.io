@@ -164,8 +164,6 @@ body:not(.no-top-padding) {
 
 .sidebar-opened {
   padding-left: 300px;
-  translation: 1s;
-  -webkit-translation: 1s;
 }
 
 ul,
@@ -369,15 +367,13 @@ hr {
   gap: 8px;
   background-color: #ffffff;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
-  transition: 1s transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 240ms transform cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateX(-100%);
   z-index: 10;
 }
 
 .sidebar-opened .sidebar {
   transform: translateX(0);
-  transition: 1s;
-  -webkit-transition: 1s;
 }
 
 .sidebar a {
