@@ -1,7 +1,3 @@
-# 请注意，目前该项目已移步至https://github.com/Misaka-IoT/misaka-vue
-
-<a href="https://github.com/misaka-fans/misaka-fans.github.io" target="_blank"><img src="https://img.shields.io/github/stars/misaka-fans/misaka-fans.github.io" /></a>
-
 # Misaka Mikoto
 
 你指尖跃动的电光，是我此生不变的信仰！
