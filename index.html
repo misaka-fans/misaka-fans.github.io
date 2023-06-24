@@ -17,15 +17,17 @@
   <script src="./scripts/main.js"></script>
   <script type="module" src="./scripts/del-text.js"></script>
   <link rel="stylesheet" href="./styles/main.css" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="preconnect" href="https://img.moeu.moe/" />
   <link rel="preload" href="./scripts/live2d.min.js" />
   <link rel="prefetch" href="https://misaka-fans.github.io" />
   <link rel="prefetch" href="https://github.io" />
   <link rel="prefetch" href="https://music.163.com" />
   <script type="module" src="./scripts/random-player.js"></script>
-
+  <link rel="stylesheet" href="./styles/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body dir="ltr">
@@ -64,14 +66,44 @@
       你指尖跃动的电光，是我此生不变的信仰，唯我超电磁炮永世长存！
     </p>
   </section>
-  <section class="marquee">
-    <ul>
-      <li><img src="https://img.moeu.moe/main/waterfall1.webp" alt="滚动图片_1" /></li>
-      <li><img src="https://img.moeu.moe/main/waterfall2.webp" alt="滚动图片_2" /></li>
-      <li><img src="https://img.moeu.moe/main/waterfall3.webp" alt="滚动图片_3" /></li>
-      <li><img src="https://img.moeu.moe/main/waterfall4.webp" alt="滚动图片_4" /></li>
-    </ul>
-  </section>
+
+<div class="carousel-box">
+  <div id="Carousel" class="carousel slide">
+    <ol class="carousel-indicators">
+        <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#Carousel" data-slide-to="1"></li>
+        <li data-target="#Carousel" data-slide-to="2"></li>
+        <li data-target="#Carousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img decoding="async" src="https://img.moeu.moe/main/waterfall1.webp" alt="First slide">
+        <div class="carousel-caption">标题 1</div>
+      </div>
+      <div class="item">
+        <img decoding="async" src="https://img.moeu.moe/main/waterfall2.webp" alt="Second slide">
+        <div class="carousel-caption">标题 2</div>
+      </div>
+      <div class="item">
+        <img decoding="async" src="https://img.moeu.moe/main/waterfall3.webp" alt="Third slide">
+        <div class="carousel-caption">标题 3</div>
+      </div>
+      <div class="item">
+        <img decoding="async" src="https://img.moeu.moe/main/waterfall4.webp" alt="Fourth slide">
+        <div class="carousel-caption">标题 4</div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#Carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#Carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+
   <aside class="sidebar">
     <a href="./pages/about-railgun/">关于美琴</a>
     <a href="./pages/photos/">美琴照片墙</a>
