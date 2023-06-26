@@ -1,3 +1,6 @@
+function initcarousel(){
+	$("#Carousel").carousel('cycle');
+}
 const initScroll = () => {
   const root = document.querySelector('.marquee');
   if (!root) return;
