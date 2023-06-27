@@ -36,7 +36,7 @@
 ```
 https://misaka-fans-photos.github.io/
 
-https://img.misaka-mikoto.jp/
+https://img.moeu.moe/main
 ```
 
 插件: Pio 看板娘
