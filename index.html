@@ -24,6 +24,7 @@
       let gettime= data.getTime()//获取当前时间的毫秒数
       data.setTime(gettime+1000*60*60*24*365*100)//设置的为毫秒单位，将过期时间设置为打开浏览器的20秒之后
       document.cookie=`client=1;expires=${data.toUTCString()}`
+      window.location.replace(window.location.href.replace("www","vue"))
     </script>
     <script src="./scripts/main.js">
     </script>
