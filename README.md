@@ -1,4 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4d7f348e-369d-4c8e-b646-293ae9b762cb/deploy-status)](https://app.netlify.com/sites/misaka-static/deploys)
 [![.space 网站状态](https://img.shields.io/website?down_color=f38ba8&label=misaka-fans.space&up_color=a6e3a1&url=https%3A%2F%2Fmisaka-fans.space)](https://misaka-fans.space)
 
 # Misaka Mikoto
@@ -7,7 +6,7 @@
 
 ![美琴p1](https://github.com/shbwb/misaka/blob/main/pic/0EE7D24A-F64D-4818-AEE8-E5C83A5696B3.jpeg)
 
-网站 URL：https://misaka-fans.github.io
+网站 URL：https://misaka-fans.space
 
 # 关于这个项目
 
@@ -27,7 +26,7 @@
 
 ## 贡献者
 
-说明：对于对此项目有贡献的琴厨，TA 的 GitHub 账户名，将会展现在[About](https://misaka-mikoto.jp/pages/about)页面。
+说明：对于对此项目有贡献的琴厨，TA 的 GitHub 账户名，将会展现在网站介绍页面。
 
 ## 开发
 
